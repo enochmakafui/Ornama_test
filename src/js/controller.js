@@ -8,6 +8,8 @@ import navView from './Views/navView';
 import brandPageView from './Views/Pages/brandPageView';
 import devronNexusBrandPageView from './Views/Pages/devronNexusBrandPageView';
 import mobileScreenNavView from './Views/Pages/mobileScreenNavView';
+import storePageView from './Views/Pages/StorePageView';
+import blogPageView from './Views/Pages/blogPageView';
 
 // homepage rendering ...
 
@@ -21,6 +23,17 @@ const renderHomePage = function () {
 const renderBrandPage = function () {
   brandPageView.render();
 };
+
+// store page rendering ...
+const renderStorePage = function(){
+  storePageView.render();
+}
+
+// blog page rendering ...
+const renderBlogPage = function () {
+  blogPageView.render();
+};
+
 
 // cal2care page rendering ...
 
@@ -58,7 +71,10 @@ init();
 
 page('/', renderHomePage);
 page('/branding', renderBrandPage);
+page('/store', renderStorePage);
+page('/blog', renderBlogPage);
 page('/branding/careBrand', renderCal2CarePage);
 page('/branding/devronNexus', renderDevronNexusPage);
+
 
 page();

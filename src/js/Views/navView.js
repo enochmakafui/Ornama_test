@@ -7,6 +7,9 @@ class NavView {
   _workLink = document.querySelector('.drop__link');
 
   _hamburgerIcon = document.querySelector('.hamburger svg');
+   get _fullScreenNav(){
+    return document.getElementById('fullscreenNav')
+  }
 
   _showDropItem;
 
@@ -32,15 +35,21 @@ class NavView {
   }
 
   addHandlerNavLinkClick(handler) {
-    this._navEL.addEventListener('click', function (e) {
+    this._navEL.addEventListener('click',  (e) => {
       e.preventDefault();
       console.log('clicked');
-      const link = e.target.closest('.nav__item-link') || e.target.closest('.nav__link-home');
-
+      const link = e.target.closest('.nav__item-link') || e.target.closest('.nav__link-home') || e.target.closest('.mobile-nav__item-link');
       if (!link) return;
+      
       const route = link.getAttribute('data-route');
       console.log(route);
       handler(route);
+      if(link.classList.contains('mobile-nav__item-link')){
+        // make the close btn  close the mobile nav 
+        console.log(link);
+        this._fullScreenNav.classList.toggle('hidden');
+
+      }
     });
   }
 

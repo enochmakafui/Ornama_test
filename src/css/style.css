@@ -34,12 +34,16 @@ nav.sticky ul .nav__link {
   color: black;
 }
 
-
 /* hero */
 
 .hero {
   font-family: 'PP Neue Montreal', sans-serif;
   font-style: normal;
+}
+.hero-bg{
+  background-image: url('/src/img/heroBackgroundImage.png');
+  background-position: center;
+  background-repeat:no-repeat;
 }
 
 .hero-heading{
@@ -189,10 +193,14 @@ nav.sticky ul .nav__link {
 
 @media screen and (max-width:768px){
   .swiper-button-prev{
-    left:5% !important;
+    left:2% !important;
+    width:28px !important;
+    height:28px !important;
   }
   .swiper-button-next{
-    right:5% !important;
+    right:2% !important;
+    width:28px !important;
+    height:28px !important;
   }
 }
 

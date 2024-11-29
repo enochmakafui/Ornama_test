@@ -3,18 +3,15 @@ class MarqueeView {
     'BRAND STRATEGY & IDENTITY',
     'UI/UX DESIGN',
     'GRAPHIC & MOTION DESIGN',
-    'WEB & APP DEVELOPMENT',
-    'SOCIAL MEDIA',
+    'SOCIAL MEDIA MARKETING',
     'BRAND STRATEGY & IDENTITY',
     'UI/UX DESIGN',
     'GRAPHIC & MOTION DESIGN',
-    'WEB & APP DEVELOPMENT',
-    'SOCIAL MEDIA',
+    'SOCIAL MEDIA MARKETING',
     'BRAND STRATEGY & IDENTITY',
     'UI/UX DESIGN',
     'GRAPHIC & MOTION DESIGN',
-    'WEB & APP DEVELOPMENT',
-    'SOCIAL MEDIA',
+    'SOCIAL MEDIA MARKETING',
   ];
 
   _generateMarqueItemsToRender() {
@@ -49,7 +46,7 @@ class MarqueeView {
 
   render() {
     return `
-        <div class="marquee mt-16 border-t border-b border-white ">
+        <div class="marquee mt-8 md:mt-16 border-t border-b border-white ">
           <div class="marquee-content text-white ">  
             ${this._generateMarqueItemsToRender()}
           </div>

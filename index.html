@@ -84,14 +84,14 @@
                   class="p-2 rounded-[10px] text-left whitespace-nowrap hover:bg-[#FF7E21] hover:scale-110 transition-all duration-300 ease-in-out"
                 >
                   <a href="#" data-route="/webApps" class="nav__item-link">
-                    Web & App Design
+                    UI Design
                   </a>
                 </li>
                 <li
                   class="p-2 rounded-[10px] text-left whitespace-nowrap hover:bg-[#FF7E21] hover:scale-110 transition-all duration-300 ease-in-out"
                 >
-                  <a href="#" data-route="/marketing" class="nav__item-link">
-                    Marketing
+                  <a href="#" data-route="/Social Media Marketing" class="nav__item-link">
+                    Social Media Marketing
                   </a>
                 </li>
               </ul>
@@ -99,8 +99,9 @@
           </li>
           <li class="ml-8 text-lg mt-1">
             <a
+              href="/store"
               data-route="/store"
-              class="text-white hover:text-[#FF7E21] flex space-x-1 nav__link"
+              class="text-white hover:text-[#FF7E21] flex space-x-1 nav__link nav__item-link"
             >
               <span>Store</span>
               <svg
@@ -125,8 +126,9 @@
           </li>
           <li class="ml-8 text-lg mt-1">
             <a
+              href="/blog"
               data-route="/blog"
-              class="text-white hover:text-[#FF7E21] nav__link"
+              class="text-white hover:text-[#FF7E21] nav__link nav__item-link"
               >Blog</a
             >
           </li>
@@ -166,7 +168,7 @@
                 <a href="#" class="text-xl ">Our Story</a>
               </li>
               <li>
-                <a href="#" class="text-xl">
+                <a href="#" class="text-xl ">
                   <button id="ourWorkBtn" class="flex items-center space-x-1 relative ">
                     <span>Our Work</span>
                     <svg
@@ -185,17 +187,17 @@
                 </svg>
                   </button>
                   <ul id="dropdownMenu" class="hidden space-y-4 text-white mt-2 bg-[rgba(0,0,0,0.8)] p-4 rounded-2xl w-max border-white border">
-                    <li><a  href="/branding" data-route="/branding" class="text-lg">Branding</a></li>
-                    <li><a href="#" class="text-lg">Web & App Design</a></li>
-                    <li><a href="#" class="text-lg">Marketing</a></li>
+                    <li><a href="/branding" data-route="/branding" class="text-lg mobile-nav__item-link">Branding</a></li>
+                    <li><a href="#" class="text-lg .nav__item-link">UI Design</a></li>
+                    <li><a href="#" class="text-lg .nav__item-link">Social Media Marketing</a></li>
                   </ul>
                 </a>
               </li>
               <li>
-                <a href="#" class="text-xl"> Store</a>
+                <a href="/store" data-route="/store" class="text-xl mobile-nav__item-link"> Store</a>
               </li>
               <li>
-                <a href="#" class="text-xl ">Blog</a>
+                <a href="/blog" data-route="/blog" class="text-xl mobile-nav__item-link ">Blog</a>
               </li>
               <li>
                 <button class="w-full rounded-2xl border-2 border-white text-xl py-2 " > Start Project</button>
@@ -235,14 +237,14 @@
             <li><a href="#">Brand Strategy & Positioning</a></li>
             <li><a href="#">Visual Architecture</a></li>
             <li><a href="#">Campaign & Ad Development</a></li>
-            <li><a href="#">Web & App Design</a></li>
+            <li><a href="#">UI Design</a></li>
             <li><a href="#">Software Development</a></li>
             <li><a href="#">Social Media Services</a></li>
           </ul>
         </section>
       </div>
-      <div class="flex flex-wrap gap-40 sm:gap-40 md:gap-40 lg:gap-40">
-        <ul class="text-white flex gap-4 w-[25%] items-end">
+      <div class="flex flex-col md:flex-row gap-40 sm:gap-40 md:gap-40 lg:gap-40">
+        <ul class="text-white flex gap-4 w-[25%] items-end ">
           <li>
             <a href="">
               <svg
