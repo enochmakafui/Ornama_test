@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon" />
+
+    <!-- neue montreal font import -->
+    <link
+      href="https://fonts.cdnfonts.com/css/pp-neue-montreal"
+      rel="stylesheet"
+    />
+
+
+    <!-- linking css file -->
+    <link rel="stylesheet" href="src/css/style.css" />
+
+    <!-- linking to javascript  -->
+    <script type="module" src="src/js/controller.js"></script>
+
+    <title>Ornama Studios</title>
+  </head>
+  <body class="bg-[#121212]">
+    <header class="header">
+      <nav class="flex justify-between align-center px-5 md:px-20 py-1 md:py-3 nav w-full">
+        <div class="w-40">
+          <a href="/" data-route="/" class="nav__link-home">
+            <img
+              src="src/img/logo-white.png"
+              alt="logo white"
+              class="nav_logo"
+            />
+          </a>
+        </div>
+        <ul class="hidden md:flex align-center justify-center">
+          <li class="ml-8 text-lg mt-1">
+            <a
+              href="#"
+              data-route="/story"
+              class="text-white hover:text-[#FF7E21] nav__link"
+              >Our Story
+            </a>
+          </li>
+          <li class="ml-8 text-lg mt-1 drop__link">
+            <a
+              href="#"
+              data-route="/works"
+              class="text-white hover:text-[#FF7E21] nav__link"
+            >
+              <button class="flex items-center space-x-1 relative drop__btn">
+                <span>Our Works</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-down lucide-dropdown mt-1"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+
+              <ul
+                class="absolute px-5 py-3 mt-3 flex flex-col gap-4 rounded-[16px] border border-white bg-[rgba(18,18,18,0.2)] backdrop-blur-[12.5px] z-10 text-white hidden_item drop__item"
+              >
+                <li
+                  class="hover:bg-[#FF7E21] hover:scale-110 transition-all duration-300 ease-in-out rounded-[10px] p-2 text-left whitespace-nowrap"
+                >
+                  <a
+                    href="/branding"
+                    data-route="/branding"
+                    class="nav__item-link"
+                  >
+                    Branding
+                  </a>
+                </li>
+                <li
+                  class="p-2 rounded-[10px] text-left whitespace-nowrap hover:bg-[#FF7E21] hover:scale-110 transition-all duration-300 ease-in-out"
+                >
+                  <a href="#" data-route="/webApps" class="nav__item-link">
+                    Web & App Design
+                  </a>
+                </li>
+                <li
+                  class="p-2 rounded-[10px] text-left whitespace-nowrap hover:bg-[#FF7E21] hover:scale-110 transition-all duration-300 ease-in-out"
+                >
+                  <a href="#" data-route="/marketing" class="nav__item-link">
+                    Marketing
+                  </a>
+                </li>
+              </ul>
+            </a>
+          </li>
+          <li class="ml-8 text-lg mt-1">
+            <a
+              data-route="/store"
+              class="text-white hover:text-[#FF7E21] flex space-x-1 nav__link"
+            >
+              <span>Store</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-shopping-cart"
+              >
+                <circle cx="8" cy="21" r="1" />
+                <circle cx="19" cy="21" r="1" />
+                <path
+                  d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="ml-8 text-lg mt-1">
+            <a
+              data-route="/blog"
+              class="text-white hover:text-[#FF7E21] nav__link"
+              >Blog</a
+            >
+          </li>
+          <li class="ml-8 text-lg mt-1">
+            <a
+              data-route="/startProject"
+              class="bg-white px-4 py-2 rounded-2xl hover:bg-[#e8e8e8] transition-all nav__link"
+              >Start a Project</a
+            >
+          </li>
+        </ul>
+        <button class="block md:hidden hamburger">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              width="24" 
+              height="24" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              stroke-width="2" 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              class="lucide lucide-align-right stroke-white transition-colors duration-300">
+              <path d="M21 12H9" />
+              <path d="M21 18H7" />
+              <path d="M21 6H3" />
+            </svg>
+          
+        </button>
+
+         <div id="fullscreenNav" class="fixed inset-0 bg-[rgba(0,0,0,0.9)] text-white flex flex-col  space-y-6 hidden z-50 pt-16 px-8">
+            <button class="close self-end">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-x"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+            </button>
+            <ul class="flex flex-col gap-5">
+              <li>
+                <a href="#" class="text-xl ">Our Story</a>
+              </li>
+              <li>
+                <a href="#" class="text-xl">
+                  <button id="ourWorkBtn" class="flex items-center space-x-1 relative ">
+                    <span>Our Work</span>
+                    <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-down lucide-dropdown mt-1"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+                  </button>
+                  <ul id="dropdownMenu" class="hidden space-y-4 text-white mt-2 bg-[rgba(0,0,0,0.8)] p-4 rounded-2xl w-max border-white border">
+                    <li><a  href="/branding" data-route="/branding" class="text-lg">Branding</a></li>
+                    <li><a href="#" class="text-lg">Web & App Design</a></li>
+                    <li><a href="#" class="text-lg">Marketing</a></li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-xl"> Store</a>
+              </li>
+              <li>
+                <a href="#" class="text-xl ">Blog</a>
+              </li>
+              <li>
+                <button class="w-full rounded-2xl border-2 border-white text-xl py-2 " > Start Project</button>
+              </li>            
+            </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="root"></div>
+    <footer class="bg-[#262626] px-2 md:px-20">
+      <div class="flex flex-wrap gap-8 sm:gap-16 md:gap-32 lg:gap-40">
+        <section class="footer__logo ">
+          <img
+            src="src/img/footerlogo.png"
+            alt="footer logo"
+            class="footer__logo_img"
+          />
+
+          <h4 class="text-white">
+            Ornama Studios is a leading creative agency in Ghana enabling
+            businesses, brands and individuals succeed with compelling visual
+            identities and stories.
+          </h4>
+        </section>
+        <section>
+          <h3 class="text-[#FF7E21]">Menu</h3>
+          <ul class="text-white">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Our Work</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3 class="text-[#FF7E21]">Services</h3>
+          <ul class="text-white">
+            <li><a href="#">Brand Strategy & Positioning</a></li>
+            <li><a href="#">Visual Architecture</a></li>
+            <li><a href="#">Campaign & Ad Development</a></li>
+            <li><a href="#">Web & App Design</a></li>
+            <li><a href="#">Software Development</a></li>
+            <li><a href="#">Social Media Services</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="flex flex-wrap gap-40 sm:gap-40 md:gap-40 lg:gap-40">
+        <ul class="text-white flex gap-4 w-[25%] items-end">
+          <li>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-twitter"
+              >
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-linkedin"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-youtube"
+              >
+                <path
+                  d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+                />
+                <path d="m10 15 5-3-5-3z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-facebook"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-instagram"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <section>
+          <h3 class="text-[#FF7E21]">About Ornama</h3>
+          <ul class="text-white">
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Our Values</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="footer__column">
+        <small class="text-white text-base"
+          ><span id="year"></span> Ornama Studios. All rights reserved.</small
+        >
+      </div>
+    </footer>
+  </body>
+</html>
