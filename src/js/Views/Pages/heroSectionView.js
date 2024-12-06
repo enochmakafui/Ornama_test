@@ -1,6 +1,6 @@
 class HeroSectionView {
   render() {
-    return `<section class="hero section section--hidden text-white mx-4 md:mx-20 mt-8 md:mt-16">
+    return `<section class="hero section section--hidden text-white mx-5 md:mx-auto md:px-10 mt-8 md:mt-16 lg:max-w-[1440px]">
         <h2 class="hero-heading ">
             <span class="font-light md:font-normal"> We are a creative agency <br class="hidden md:block"> building brands that <br class="hidden md:block"> make a </span> difference
         </h2>

@@ -2,31 +2,31 @@ import logoImageBlack from '/src/img/logo_black.png';
 import logoImageWhite from '/src/img/logo-white.png';
 
 class NavView {
+  _header = document.querySelector('header');
   _navEL = document.querySelector('nav');
   _navLogo = document.querySelector('.nav_logo');
   _workLink = document.querySelector('.drop__link');
 
   _hamburgerIcon = document.querySelector('.hamburger svg');
-   get _fullScreenNav(){
-    return document.getElementById('fullscreenNav')
+  get _fullScreenNav() {
+    return document.getElementById('fullscreenNav');
   }
 
   _showDropItem;
 
-  
   addHandlerObserverNav() {
-    const nav = this._navEL;
+    const header = this._header;
 
     window.addEventListener('scroll', () => {
       if (window.scrollY >= 50) {
-        if (!nav.classList.contains('sticky')) {
-          nav.classList.add('sticky');
+        if (!header.classList.contains('sticky')) {
+          header.classList.add('sticky');
           this._hamburgerIcon.classList.remove('stroke-white');
           this._hamburgerIcon.classList.add('stroke-black');
           this._navLogo.src = logoImageBlack;
         }
       } else {
-        nav.classList.remove('sticky');
+        header.classList.remove('sticky');
         this._hamburgerIcon.classList.remove('stroke-black');
         this._hamburgerIcon.classList.add('stroke-white');
         this._navLogo.src = logoImageWhite;
@@ -35,20 +35,22 @@ class NavView {
   }
 
   addHandlerNavLinkClick(handler) {
-    this._navEL.addEventListener('click',  (e) => {
+    this._navEL.addEventListener('click', e => {
       e.preventDefault();
       console.log('clicked');
-      const link = e.target.closest('.nav__item-link') || e.target.closest('.nav__link-home') || e.target.closest('.mobile-nav__item-link');
+      const link =
+        e.target.closest('.nav__item-link') ||
+        e.target.closest('.nav__link-home') ||
+        e.target.closest('.mobile-nav__item-link');
       if (!link) return;
-      
+
       const route = link.getAttribute('data-route');
       console.log(route);
       handler(route);
-      if(link.classList.contains('mobile-nav__item-link')){
-        // make the close btn  close the mobile nav 
+      if (link.classList.contains('mobile-nav__item-link')) {
+        // make the close btn  close the mobile nav
         console.log(link);
         this._fullScreenNav.classList.toggle('hidden');
-
       }
     });
   }

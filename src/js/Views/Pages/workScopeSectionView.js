@@ -3,14 +3,14 @@ import marketingCardImage from '/src/img/ScopeOfWork_Marketting_ImageCard.png';
 import webAndAppCardImage from '/src/img/ScopeOfWork_Web_and_Design_ImageCard.png';
 class WorkScopeSectionView {
   render() {
-    return ` <section class="service section section--hidden text-white mt-8 md:mt-32 px-2 md:px-20">
-        <div class="flex justify-center">
-        <h2 class="rounded-3xl border-white block md:hidden text-center text-2xl md:text-4xl border w-max px-8 py-1 mb-4"> See our Works </h2>
+    return ` <section class="service section section--hidden text-white md:px-10 mt-8 md:mt-32 mx-5 md:mx-auto lg:max-w-[1440px]">
+        <div class="flex ">
+        <h2 class="rounded-3xl border-white block md:hidden text-center section-heading border w-max px-8 py-1 mb-4 mx-auto"> See our Works </h2>
         </div>
-        <h2 class="text-center text-2xl md:text-4xl">
+        <h2 class="text-center section-heading ">
             Our Scope Of Work
         </h2>
-        <div class="scope-of-work-card-container mt-8 md:mt-16 flex flex-col md:flex-row justify-between gap-4 "> 
+        <div class="scope-of-work-card-container mt-8 md:mt-16 flex flex-col md:flex-row justify-between gap-8 "> 
             <div class="w-full md:w-auto">
             <img src="${brandCardImage}" alt="branding card "  class="w-full"/>
             </div>

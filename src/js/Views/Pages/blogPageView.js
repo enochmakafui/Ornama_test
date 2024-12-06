@@ -1,19 +1,18 @@
-import carrouselView from "./carrouselView";
-import View from "../view";
-import athleticManImage from "/src/img/athleticManImage.png"
-import blogCardImage1 from "/src/img/blogCardImage1.png"
-import blogCardImage2 from "/src/img/blogCardImage2.png"
-import blogCardImage3 from "/src/img/blogCardImage3.png"
+import carrouselView from './carrouselView';
+import View from '../view';
+import athleticManImage from '/src/img/athleticManImage.png';
+import blogCardImage1 from '/src/img/blogCardImage1.png';
+import blogCardImage2 from '/src/img/blogCardImage2.png';
+import blogCardImage3 from '/src/img/blogCardImage3.png';
 class BlogPageView extends View {
-
-    _generateMarkup(){
-        return `
-        <div class=" pt-8 md:pt-16 pb-16"	>
-                <div class="text-white px-2 md:px-20">
+  _generateMarkup() {
+    return `
+        <div class="pt-8 md:pt-16 pb-16"	>
+                <div class="text-white px-5 md:px-20">
                     <h1 class="hero-heading italic mb-8"> Insights from the frontlines</h1>
                     <p>Stay up-to-date with the latest industry trends, expert advice, and captivating stories here</p>
                 </div>
-                <div class="px-2 md:px-20 mt-8 md:mt-16">
+                <div class="px-5 md:px-20 mt-8 md:mt-16">
                     <div class="bg-white rounded-2xl flex flex-col md:flex-row justify-between gap-4 md:gap-8 px-8 py-8">
                         <div>
                             <h3 class="mb-16">Article by Richmond Aryeh | 2024 </h3>
@@ -36,7 +35,7 @@ class BlogPageView extends View {
                     </ul>
                     
                     <div class="top-articles ">
-                        <ul class="flex  gap-4 px-2 md:px-20 mt-8 justify-between">
+                        <ul class="flex flex-col md:flex-row gap-4 px-5 md:px-20 mt-8 justify-between">
                             <li class="bg-[#383838] px-5 py-4 rounded-3xl">
                                 <p class="bg-[#FF7E2133] w-max text-[#FF7E21] px-2 py-1 rounded-lg mb-2">Branding </p>
                                 <figure >
@@ -83,10 +82,10 @@ class BlogPageView extends View {
                         </ul>
                     </div> 
                     <div class="border-b border-white mx-2 md:mx-20 mt-8">
-                        <h3 class="text-white mb-4 text-xl">Other stories</h3>
+                        <h3 class="text-white mb-4 text-xl pl-5">Other stories</h3>
                     </div>
                     <div>
-                        <ul class="flex  gap-4 px-2 md:px-20 mt-8 justify-between">
+                        <ul class="flex flex-col md:flex-row gap-4 px-5 md:px-20 mt-8 justify-between">
                         <li class="bg-[#383838] px-5 py-4 rounded-3xl">
                                 <p class="bg-[#3dacbd6c] px-4 py-1 rounded-lg w-max mb-2 text-[#3DABBD]">UI/UX</p>
                                  <figure>
@@ -126,16 +125,15 @@ class BlogPageView extends View {
                     </div>
                 </div>
                 ${carrouselView.render()}
-         </div>`
-    }
+         </div>`;
+  }
 
-    render(){
-        const markup = this._generateMarkup();
-        this._clear();
-        this._rootElement.insertAdjacentHTML('afterbegin', markup);
-        carrouselView.initSwiper();
-
-    }
+  render() {
+    const markup = this._generateMarkup();
+    this._clear();
+    this._rootElement.insertAdjacentHTML('afterbegin', markup);
+    carrouselView.initSwiper();
+  }
 }
 
 export default new BlogPageView();
