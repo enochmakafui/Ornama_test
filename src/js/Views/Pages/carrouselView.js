@@ -20,8 +20,8 @@ class CarrouselView {
       spaceBetween: 20,
       slidesPerView: 1.7,
       breakpoints: {
-        0:{
-          slidesPerView: 1
+        0: {
+          slidesPerView: 1,
         },
         500: {
           slidesPerView: 1,
@@ -57,7 +57,7 @@ class CarrouselView {
 
   render() {
     return `
-    <div class="carrousel mt-16 md:mt-32">
+    <div class="carrousel mt-16 md:mt-[95px]">
         <div class="carrousel-container">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -119,7 +119,6 @@ class CarrouselView {
     </div>
         `;
   }
-  
 }
 
 export default new CarrouselView();

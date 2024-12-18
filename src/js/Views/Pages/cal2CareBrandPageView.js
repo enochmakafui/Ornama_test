@@ -21,15 +21,15 @@ import sideBySideLoveAndLogoImage from 'url:/src/img/careBrandMedia/sideBySideLo
 class Cal2CarePageView extends View {
   _generateMarkup() {
     return `
-    <div class="bg-white px-5 md:px-20 pt-8 md:pt-16 pb-16">
+    <div class="bg-white px-5 md:px-[100px] lg:px-[auto] pt-8 md:pt-[38px] pb-[100px]">
         <section class="">
             <div >
-                <video autoPlay loop muted class="rounded-2xl">
+                <video autoPlay loop muted class="rounded-[11px] md:rounded-[40px]">
                     <source src="${weCareWithLoveVideo}" type="video/mp4" />
                 </video>
             </div>
         </section>
-        <section class="mt-8 md:mt-16 flex flex-col md:flex-row px-2 md:px-16">
+        <section class="mt-8 md:mt-[100px] flex flex-col md:flex-row px-2 md:px-16">
             <div class="basis-2/4">
                 <h2 class="text-5xl font-normal  md:italic mb-4">Call2Care solutions </br> UK Rebrand</h2>
                 <p>A Domiciliary care service provider</p>
@@ -38,17 +38,17 @@ class Cal2CarePageView extends View {
                 <p class="text-lg">Some brands are deeply embedded with the essence of compassion and humanity, possessing the power to provide comfort, support, and hope to those in need. When Call2 Care Solution approached us for their rebranding project, we recognized that we were about to collaborate with a brand that epitomizes the genuine spirit of care and love.</p>
             </div>
         </section>
-        <section class="mt-8 md:mt-16">
+        <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${oldManAndLadyLongImage}" alt="" class="rounded-2xl"/>
+                <img src="${oldManAndLadyLongImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
             </div>
         </section>
-        <section class="mt-8 md:mt-16">
+        <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${oldManAndLadyImage}" alt="" class="rounded-2xl"/>
+                <img src="${oldManAndLadyImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
             </div>
         </section>
-        <section class="mt-8 md:mt-16 flex flex-col md:flex-row px-2 md:px-16">
+        <section class="mt-8 md:mt-[100px] flex flex-col md:flex-row px-2 md:px-16">
             <div class="basis-2/4">
                 <h2 class="text-5xl mb-4">The Decision to </br> Rebrand</h2>
                 <ul>
@@ -64,55 +64,55 @@ class Cal2CarePageView extends View {
             </div>
         </section>
 
-        <section class="mt-8 md:mt-16">
+        <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${calCareOldLadyAndLadyImage}" alt="" class="rounded-2xl"/>
+                <img src="${calCareOldLadyAndLadyImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
             </div>
         </section>
-        <section class="mt-8 md:mt-16">
+        <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${fourLogosImage}" alt="" class="rounded-2xl"/>
+                <img src="${fourLogosImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
             </div>
         </section>
         
-        <section class="mt-8 md:mt-16">
+        <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${fourTypeFacesImage}" alt="" class="rounded-2xl"/>
+                <img src="${fourTypeFacesImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
             </div>
         </section>
-        <section class="mt-8 md:mt-16">
+        <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${typeFaceImage}" alt="" class="rounded-2xl"/>
+                <img src="${typeFaceImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
             </div>
         </section>
-        <section class="mt-8 md:mt-16">
+        <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${calCareLogoImage}" alt="" class="rounded-2xl"/>
+                <img src="${calCareLogoImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
             </div>
         </section>
-        <section class="mt-8 md:mt-16">
+        <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${businessCardImage}" alt="" class="rounded-2xl"/>
+                <img src="${businessCardImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
             </div>
         </section>
-        <section class="mt-8 md:mt-16">
+        <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${oldLadyAndNurseImage}" alt="" class="rounded-2xl"/>
+                <img src="${oldLadyAndNurseImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
             </div>
         </section>
-        <section class="mt-8 md:mt-16">
+        <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${lotsOfLogosImage}" alt="" class="rounded-2xl"/>
+                <img src="${lotsOfLogosImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
             </div>
         </section>
-        <section class="mt-8 md:mt-16">
+        <section class="mt-8 md:mt-[100px]">
             <div >
-                <video autoPlay loop muted class="rounded-2xl">
+                <video autoPlay loop muted class="rounded-[11px] md:rounded-[40px]">
                     <source src="${carVideo}" type="video/mp4" />
                 </video>
             </div>
         </section>
-        <section class="mt-8 md:mt-16">
+        <section class="mt-8 md:mt-[100px]">
             <div class="flex justify-center align-center text-center px-2 md:px-32">
                 <div>
                     <p class="mb-2 text-lg text-justify">“ I was impressed by the outcome so I awarded a 3-month contract to <span class="font-bold">Ornama Studio</span> to aid in the post branding process. The team did my company’s brochures and social media posts and they were awesome. ” </p>
@@ -120,31 +120,31 @@ class Cal2CarePageView extends View {
                 </div>
             </div>
         </section>
-         <section class="mt-8 md:mt-16">
+         <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${threePostersImage}" alt="" class="rounded-2xl"/>
+                <img src="${threePostersImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
             </div>
         </section>
 
-        <section class="mt-8 md:mt-16">
+        <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${twoPostersSideBySide}" alt="" class="rounded-2xl"/>
+                <img src="${twoPostersSideBySide}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
             </div>
         </section>
-        <section class="mt-8 md:mt-16">
+        <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${lotOfPostersImages}" alt="" class="rounded-2xl"/>
+                <img src="${lotOfPostersImages}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
             </div>
         </section>
         
-        <section class="mt-8 md:mt-16">
+        <section class="mt-8 md:mt-[100px]">
            <div >
-               <img src="${twoPostersImage}" alt="" class="rounded-2xl"/>
+               <img src="${twoPostersImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
            </div>
        </section>
-        <section class="mt-8 md:mt-16">
+        <section class="mt-8 md:mt-[100px]">
            <div >
-               <img src="${posterImage}" alt="" class="rounded-2xl"/>
+               <img src="${posterImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
            </div>
        </section>
     </div>

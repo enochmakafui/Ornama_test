@@ -40,8 +40,8 @@ class TestimonialView {
             <div class="testimonial-swiper-container text-white">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="testimonial-card bg-[#121212] py-2 md:py-8 px-4 md:px-12 rounded-2xl">
-                            <h3 class=" mb-4  bg-[#000000] uppercase p-4 rounded-2xl w-max">Testimonials</h3>
+                        <div class="testimonial-card bg-[#121212] py-[24px] md:py-8 px-[24px] md:px-12 rounded-2xl">
+                            <h3 class=" mb-4  bg-[#000000] uppercase px-[24px] py-[12px] rounded-[20px] w-max">Testimonials</h3>
                             <h2 class="text-3xl mb-4">What our clients <span class="italic font-semibold text-[#ff7e21]">said</span></h2>
                             <div class="flex gap-2 mb-2">
                                 <span>
@@ -72,8 +72,8 @@ class TestimonialView {
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="testimonial-card bg-[#121212] py-2 md:py-8 px-4 md:px-12 rounded-2xl">
-                            <h3 class=" mb-4  bg-[#000000] uppercase p-4 rounded-2xl w-max">Testimonials</h3>
+                        <div class="testimonial-card bg-[#121212] py-[24px] md:py-8 px-[24px] md:px-12 rounded-2xl">
+                            <h3 class=" mb-4  bg-[#000000] uppercase px-[24px] py-[12px] rounded-[20px] w-max">Testimonials</h3>
                             <h2 class="text-3xl mb-4">What our clients <span class="italic font-semibold text-[#ff7e21]">said</span></h2>
                             <div class="flex gap-2 mb-2">
                                 <span>
@@ -104,8 +104,8 @@ class TestimonialView {
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="testimonial-card bg-[#121212] py-2 md:py-8 px-4 md:px-12 rounded-2xl">
-                            <h3 class=" mb-4  bg-[#000000] uppercase p-4 rounded-2xl w-max">Testimonials</h3>
+                        <div class="testimonial-card bg-[#121212] py-[24px] md:py-8 px-[24px] md:px-12 rounded-2xl">
+                            <h3 class=" mb-4  bg-[#000000] uppercase px-[24px] py-[12px] rounded-[20px] w-max">Testimonials</h3>
                             <h2 class="text-3xl mb-4">What our clients <span class="italic font-semibold text-[#ff7e21]">said</span></h2>
                             <div class="flex gap-2 mb-2">
                                 <span>
@@ -136,8 +136,8 @@ class TestimonialView {
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="testimonial-card bg-[#121212] py-2 md:py-8 px-4 md:px-12 rounded-2xl">
-                            <h3 class=" mb-4  bg-[#000000] uppercase p-4 rounded-2xl w-max">Testimonials</h3>
+                        <div class="testimonial-card bg-[#121212] py-[24px] md:py-8 px-[24px] md:px-12 rounded-2xl">
+                            <h3 class=" mb-4  bg-[#000000] uppercase px-[24px] py-[12px] rounded-[20px] w-max">Testimonials</h3>
                             <h2 class="text-3xl mb-4">What our clients <span class="italic font-semibold text-[#ff7e21]">said</span></h2>
                             <div class="flex gap-2 mb-2">
                                 <span>
@@ -168,8 +168,8 @@ class TestimonialView {
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="testimonial-card bg-[#121212] py-2 md:py-8 px-4 md:px-12 rounded-2xl">
-                            <h3 class=" mb-4  bg-[#000000] uppercase p-4 rounded-2xl w-max">Testimonials</h3>
+                        <div class="testimonial-card bg-[#121212] py-[24px] md:py-8 px-[24px] md:px-12 rounded-2xl">
+                            <h3 class=" mb-4  bg-[#000000] uppercase px-[24px] py-[12px] rounded-[20px] w-max">Testimonials</h3>
                             <h2 class="text-3xl mb-4">What our clients <span class="italic font-semibold text-[#ff7e21]">said</span></h2>
                             <div class="flex gap-2 mb-2">
                                 <span>

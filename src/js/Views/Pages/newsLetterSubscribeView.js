@@ -1,8 +1,8 @@
 class NewsLetterSubscribeView {
   render() {
     return `    
-    <section class="mx-5 md:px-10  md:mx-auto lg:max-w-[1440px] py-8 flex flex-col gap-6 news__letter">
-        <div class="w-full">
+    <section class="mx-5 md:px-10  md:mx-[80px] lg:mx-[auto] lg:max-w-[1440px] pt-[40px] md:pt-[117px] pb-[60px] md:pb-[113px] flex flex-col md:flex-row gap-6 news__letter">
+        <div class="w-full md:w-[50%]">
             <h2 class="text-white text-xl md:text-2xl text-left">
                 Subscribe to our newsletter  to <br class="block md:hidden"> get <br class="hidden md:block"> the latest news in your inbox
             </h2>

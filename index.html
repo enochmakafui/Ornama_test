@@ -11,6 +11,12 @@
       href="https://fonts.cdnfonts.com/css/pp-neue-montreal"
       rel="stylesheet"
     />
+    <!-- sf pro display font -->
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
+    <!-- Riccione serial font -->
 
     <!-- linking css file -->
     <link rel="stylesheet" href="src/css/style.css" />
@@ -23,9 +29,9 @@
   <body class="bg-[#121212]">
     <header class="header w-full">
       <nav
-        class="flex justify-between align-center mx-5 md:mx-auto md:px-10 py-1 md:py-3 nav lg:max-w-[1440px]"
+        class="flex justify-between align-center mx-5 md:mx-[80px] lg:mx-[auto] px-[16px] md:px-10 py-[28px] md:py-3 nav lg:max-w-[1440px]"
       >
-        <div class="w-36">
+        <div class="w-[138px] h-[44px] md:w-[165px] md:h-[52px]">
           <a href="/" data-route="/" class="nav__link-home">
             <img
               src="src/img/logo-white.png"
@@ -35,7 +41,7 @@
           </a>
         </div>
         <ul class="hidden md:flex align-center justify-center">
-          <li class="ml-8 text-lg mt-1">
+          <li class="ml-[64px] text-lg mt-1">
             <a
               href="#"
               data-route="/story"
@@ -43,7 +49,7 @@
               >Our Story
             </a>
           </li>
-          <li class="ml-8 text-lg mt-1 drop__link">
+          <li class="ml-[64px] text-lg mt-1 drop__link">
             <a
               href="#"
               data-route="/works"
@@ -102,7 +108,7 @@
               </ul>
             </a>
           </li>
-          <li class="ml-8 text-lg mt-1">
+          <li class="ml-[64px] text-lg mt-1">
             <a
               href="/store"
               data-route="/store"
@@ -129,7 +135,7 @@
               </svg>
             </a>
           </li>
-          <li class="ml-8 text-lg mt-1">
+          <li class="ml-[64px] text-lg mt-1">
             <a
               href="/blog"
               data-route="/blog"
@@ -137,7 +143,7 @@
               >Blog</a
             >
           </li>
-          <li class="ml-8 text-lg mt-1">
+          <li class="ml-[64px] text-lg mt-1">
             <a
               data-route="/startProject"
               class="bg-white px-4 py-2 rounded-2xl hover:bg-[#e8e8e8] transition-all nav__link"
@@ -156,7 +162,7 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-align-right stroke-white transition-colors duration-300"
+            class="lucide lucide-align-right stroke-white transition-colors duration-300 w-[44px] h-[44px]"
           >
             <path d="M21 12H9" />
             <path d="M21 18H7" />
@@ -166,27 +172,39 @@
 
         <div
           id="fullscreenNav"
-          class="fixed inset-0 bg-[rgba(0,0,0,0.9)] text-white flex flex-col space-y-6 hidden z-50 pt-16 px-8"
+          class="fixed inset-0 bg-[#121212] text-white flex flex-col hidden z-50 pt-[28px] px-8"
         >
-          <button class="close self-end">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-circle-x"
-            >
-              <circle cx="12" cy="12" r="10" />
-              <path d="m15 9-6 6" />
-              <path d="m9 9 6 6" />
-            </svg>
-          </button>
-          <ul class="flex flex-col gap-5">
+          <div class="flex justify-between mb-[128px]">
+            <div class="w-[138px] h-[44px] md:w-[165px] md:h-[52px]">
+              <a href="/" data-route="/" class="nav__link-home">
+                <img
+                  src="src/img/logo-white.png"
+                  alt="logo white"
+                  class="nav_logo"
+                />
+              </a>
+            </div>
+            <button class="close self-end">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-circle-x w-[44px] h-[44px]"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="m15 9-6 6" />
+                <path d="m9 9 6 6" />
+              </svg>
+            </button>
+          </div>
+
+          <ul class="flex flex-col gap-9">
             <li>
               <a href="#" class="text-xl">Our Story</a>
             </li>
@@ -214,7 +232,7 @@
                 </button>
                 <ul
                   id="dropdownMenu"
-                  class="hidden space-y-4 text-white mt-2 bg-[rgba(0,0,0,0.8)] p-4 rounded-2xl w-max border-white border"
+                  class="flex flex-col gap-2 text-white mt-2 bg-[rgba(0,0,0,0.8)] py-[12px] px-[16px] rounded-2xl w-max border-white border"
                 >
                   <li>
                     <a
@@ -254,7 +272,7 @@
             </li>
             <li>
               <button
-                class="w-full rounded-2xl border-2 border-white text-xl py-2"
+                class="w-full rounded-[64px] border-2 border-white text-xl py-[12px]"
               >
                 Start Project
               </button>
@@ -265,7 +283,7 @@
     </header>
     <div id="root"></div>
     <footer class="bg-[#262626]">
-      <div class="mx-5 md:px-10 md:mx-auto lg:max-w-[1440px]">
+      <div class="mx-5 md:px-10 md:mx-[80px] lg:mx-[auto] lg:max-w-[1440px]">
         <div
           class="grid grid-cols-2 md:grid-cols-4 gap-x-1 md:gap-x-12 gap-y-8"
         >

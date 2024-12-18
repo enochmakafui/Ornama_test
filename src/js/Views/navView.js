@@ -37,7 +37,6 @@ class NavView {
   addHandlerNavLinkClick(handler) {
     this._navEL.addEventListener('click', e => {
       e.preventDefault();
-      console.log('clicked');
       const link =
         e.target.closest('.nav__item-link') ||
         e.target.closest('.nav__link-home') ||
@@ -45,11 +44,8 @@ class NavView {
       if (!link) return;
 
       const route = link.getAttribute('data-route');
-      console.log(route);
       handler(route);
       if (link.classList.contains('mobile-nav__item-link')) {
-        // make the close btn  close the mobile nav
-        console.log(link);
         this._fullScreenNav.classList.toggle('hidden');
       }
     });
