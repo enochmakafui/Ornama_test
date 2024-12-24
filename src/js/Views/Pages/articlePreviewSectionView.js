@@ -14,29 +14,29 @@ class ArticlePreviewSectionView {
         <figure class="w-full md:w-auto">
             <img class="w-full h-auto object-cover" src="${articleImageOne}" alt="" />
             <figcaption class="mt-[24px]">
-                <p class="text-white">The Business of Design</p>
-                <small class="text-white">Richmond Aryeh</small>
+                <p class="text-white text-[24px]">The Business of Design</p>
+                <p class="text-white italic">Richmond Aryeh</small>
             </figcaption>
         </figure>
         <figure class="w-full md:w-auto">
             <img class="w-full h-auto object-cover" src="${articleImageTwo}" alt="" />
             <figcaption class="mt-[24px]">
-                <p class="text-white">Client Relationships</p>
-                <small class="text-white">Joseph Sa-Ambo</small>
+                <p class="text-white text-[24px]">Client Relationships</p>
+                <p class="text-white italic">Joseph Sa-Ambo</p>
             </figcaption>
         </figure>
         <figure class="w-full md:w-auto">
             <img class="w-full h-auto object-cover" src="${articleImageThree}" alt="" />
             <figcaption class="mt-[24px]">
-                <p class="text-white">UX Research 101</p>
-                <small class="text-white">Joseph Sa-Ambo</small>
+                <p class="text-white text-[24px]">UX Research 101</p>
+                <p class="text-white italic">Joseph Sa-Ambo</p>
             </figcaption>
         </figure>
         <figure class="w-full md:w-auto">
             <img class="w-full h-auto object-cover" src="${articleImageFour}" alt="" />
             <figcaption class="mt-[24px]">
-                <p class="text-white">Colours in UI Design</p>
-                <small class="text-white">Richmond Aryeh</small>
+                <p class="text-white text-[24px]">Colours in UI Design</p>
+                <p class="text-white italic">Richmond Aryeh</p>
             </figcaption>
         </figure>
     </div>

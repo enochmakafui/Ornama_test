@@ -13,7 +13,7 @@ class BlogPageView extends View {
                     <p>Stay up-to-date with the latest industry trends, expert advice, and captivating stories here</p>
                 </div>
                 <div class="px-5 md:px-20 lg:px-[auto] mt-8 md:mt-[96px]">
-                    <div class="bg-white rounded-2xl flex flex-col md:flex-row justify-between gap-4 md:gap-[75px] px-[16px] md:px-[40px] py-[20px] md:py-[78px]">
+                    <div class="bg-white text-[color:#343a40] rounded-2xl flex flex-col md:flex-row justify-between gap-4 md:gap-[75px] px-[16px] md:px-[40px] py-[20px] md:py-[78px]">
                         <div class="hidden md:block"> 
                             <h3 class="mb-[48px]">Article by Richmond Aryeh | 2024 </h3>
                             <h2 class="text-2xl md:text-6xl font-semibold mb-[16px]">The power of <br/> branding for small-scale startups</h2>

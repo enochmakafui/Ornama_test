@@ -68,7 +68,7 @@ class HomePageView extends View {
   _generateMarkup() {
     return `
     <div class="bg-[#121212]">
-      <div class="hero-bg">
+      <div class="hero-bg  pb-[95px] ">
         ${heroSectionView.render()}
         ${marqueeView.render()}  
       </div>

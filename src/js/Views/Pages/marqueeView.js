@@ -46,7 +46,7 @@ class MarqueeView {
 
   render() {
     return `
-        <div class="marquee mt-8 md:mt-16 border-t border-b border-white ">
+        <div class="marquee mt-8 md:mt-[96px] border-t border-b border-white ">
           <div class="marquee-content text-white ">  
             ${this._generateMarqueItemsToRender()}
           </div>

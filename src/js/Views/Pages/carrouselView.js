@@ -1,10 +1,10 @@
 import Swiper from 'swiper';
 import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
-import freshBayImage from '/src/img/FreshBay.png';
+import freshBayImage from '/src/img/FreshBay.jpg';
 import devronNexusImage from '/src/img/DevronNexus.png';
 import socialMediaVideo from 'url:/src/img/Social Media.mp4';
-import call2CareImage from '/src/img/call2care.png';
+import call2CareImage from '/src/img/call2care.jpg';
 
 class CarrouselView {
   initSwiper() {
@@ -57,7 +57,7 @@ class CarrouselView {
 
   render() {
     return `
-    <div class="carrousel mt-16 md:mt-[95px]">
+    <div class="carrousel mt-16 md:mt-[62px]">
         <div class="carrousel-container">
             <div class="swiper-container">
                 <div class="swiper-wrapper">

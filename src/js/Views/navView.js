@@ -6,33 +6,33 @@ class NavView {
   _navEL = document.querySelector('nav');
   _navLogo = document.querySelector('.nav_logo');
   _workLink = document.querySelector('.drop__link');
-
   _hamburgerIcon = document.querySelector('.hamburger svg');
+
   get _fullScreenNav() {
     return document.getElementById('fullscreenNav');
   }
 
   _showDropItem;
 
-  addHandlerObserverNav() {
-    const header = this._header;
+  // addHandlerObserverNav() {
+  //   const header = this._header;
 
-    window.addEventListener('scroll', () => {
-      if (window.scrollY >= 50) {
-        if (!header.classList.contains('sticky')) {
-          header.classList.add('sticky');
-          this._hamburgerIcon.classList.remove('stroke-white');
-          this._hamburgerIcon.classList.add('stroke-black');
-          this._navLogo.src = logoImageBlack;
-        }
-      } else {
-        header.classList.remove('sticky');
-        this._hamburgerIcon.classList.remove('stroke-black');
-        this._hamburgerIcon.classList.add('stroke-white');
-        this._navLogo.src = logoImageWhite;
-      }
-    });
-  }
+  //   window.addEventListener('scroll', () => {
+  //     if (window.scrollY >= 50) {
+  //       if (!header.classList.contains('sticky')) {
+  //         header.classList.add('sticky');
+  //         this._hamburgerIcon.classList.remove('stroke-white');
+  //         this._hamburgerIcon.classList.add('stroke-black');
+  //         this._navLogo.src = logoImageBlack;
+  //       }
+  //     } else {
+  //       header.classList.remove('sticky');
+  //       this._hamburgerIcon.classList.remove('stroke-black');
+  //       this._hamburgerIcon.classList.add('stroke-white');
+  //       this._navLogo.src = logoImageWhite;
+  //     }
+  //   });
+  // }
 
   addHandlerNavLinkClick(handler) {
     this._navEL.addEventListener('click', e => {

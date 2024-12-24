@@ -18,7 +18,7 @@ import parcelImage from 'url:/src/img/DevronBrandMedia/parcelImage.png';
 class DevronNexusPageView extends View {
   _generateMarkup() {
     return `
-    <div class="bg-white px-2 md:px-20 pt-8 md:pt-16 pb-16">
+    <div class="bg-white text-[color:#343a40] px-2 md:px-20 pt-8 md:pt-16 pb-16">
         <section class="">
             <div >
                 <img src="${topBannerImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
