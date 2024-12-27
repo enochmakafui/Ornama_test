@@ -3,7 +3,7 @@ import comingSoonImage from '/src/img/comingSoonImage.jpg';
 class StorePageView extends View {
   _generateMarkup() {
     return `
-    <div class=" px-5 md:px-20 pt-8 md:pt-16 pb-16"	>
+    <div class=" px-5 md:px-20 pt-8 md:pt-[211px] pb-16"	>
             <img src="${comingSoonImage}" alt="" class="w-full"/>	
     </div>`;
   }
