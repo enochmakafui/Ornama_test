@@ -1,5 +1,6 @@
 import uiDesignImage from '/src/img/Ui_design_image.jpg';
 import marketingImage from '/src/img/social_media_image.jpg';
+import carImage from '/src/img/carImage.png';
 class WorkScopeSectionView {
   render() {
     return ` <section class="service section section--hidden text-white md:px-10 mt-8 md:mt[96px] mx-5 md:mx-[80px] lg:mx-[auto] lg:max-w-[1440px]">
@@ -11,7 +12,7 @@ class WorkScopeSectionView {
         </h2>
         <div class="scope-of-work-card-container mt-8 md:mt-[96px] flex flex-col md:flex-row justify-center gap-[40px] px-auto "> 
             <div class="relative  brand-container">
-              <img src="${marketingImage}" alt="branding card "  class="w-[400px] h-[320px] rounded-3xl"/>
+              <img src="${carImage}" alt="branding card "  class="w-[400px] h-[320px] rounded-3xl"/>
               <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 rounded-b-3xl">
                 <h3 class="mb-[17px] md:mb-[18px] ml-[21px] md:ml-[24px] text-[44px]">Branding</h3>
                 <div class=" flex-col gap-[8px] ml-[21px]  text-white brand-content-container">

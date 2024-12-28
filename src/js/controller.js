@@ -10,7 +10,10 @@ import devronNexusBrandPageView from './Views/Pages/devronNexusBrandPageView';
 import mobileScreenNavView from './Views/Pages/mobileScreenNavView';
 import storePageView from './Views/Pages/StorePageView';
 import blogPageView from './Views/Pages/blogPageView';
+import blogReadMoreView from './Views/Pages/blogReadMoreView';
+import socialMediaMarketingView from './Views/Pages/socialMediaPostPageView';
 import workScopeSectionView from './Views/Pages/workScopeSectionView';
+import socialMediaReelsPage from './Views/Pages/socialMediaReelsPage';
 
 // homepage rendering ...
 
@@ -53,12 +56,23 @@ const controlNavRoutes = function (route) {
   page(route);
 };
 
+const renderBlogReadMorePage = function () {
+  blogReadMoreView.render();
+};
+
+const renderSocialMediaPage = function () {
+  socialMediaMarketingView.render();
+};
+
+const renderSocialMediaReelsPage = function () {
+  socialMediaReelsPage.render();
+};
+
 // first actions
 const init = function () {
   const footerYear = document.getElementById('year');
   const year = new Date().getFullYear();
   footerYear.innerHTML = year;
-  // navView.addHandlerObserverNav();
   navView.addHandlerWorkHover();
   navView.addHandlerNavLinkClick(controlNavRoutes);
   mobileScreenNavView.addHandlerHamburgerMenuClick();
@@ -75,5 +89,8 @@ page('/store', renderStorePage);
 page('/blog', renderBlogPage);
 page('/branding/careBrand', renderCal2CarePage);
 page('/branding/devronNexus', renderDevronNexusPage);
+page('/blog/1', renderBlogReadMorePage);
+page('/social-media-post', renderSocialMediaPage);
+page('/social-media-reels', renderSocialMediaReelsPage);
 
 page();

@@ -8,7 +8,8 @@ import rehomeLogo from '/src/img/RehomeLogo.png';
 class ClientSectionView {
   render() {
     return `
-    <section class="client client__heading  bg-white mt-8 md:mt-[150px] py-[40px] md:py-[97px] flex flex-col justify-center items-center px-5 md:px-20">
+    <section class="client client__heading  bg-white mt-8 md:mt-[150px] py-[40px] md:py-[97px] flex flex-col justify-center items-center px-5 md:px-20 ">
+    <div class="lg:max-w-[1440px]">
       <div class="section section--hidden client_section rotate">
         <div>
           <h2 class="text-center text-[72px]  client__heading font-medium">The clients we serve</h2>
@@ -37,6 +38,7 @@ class ClientSectionView {
                   <img src="${lagosAvenueLogo}" alt="rehome logo" />
                 </div>
         </div>
+      </div>
       </div>
     </section>`;
   }

@@ -40,6 +40,70 @@ nav ul {
   font-family: 'SF Pro Display', sans-serif;
 }
 /* hero */
+.read-more-preview {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/src/img/athleticManImage.png');
+  /* background-size: cover; */
+  background-position: right;
+  background-color: #000;
+  background-repeat: no-repeat;
+  height: 560px;
+  position: relative;
+}
+.read-more-preview h2 {
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-size: 96px;
+  line-height: 1;
+  /* letter-spacing: -1.92px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+.read-more-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 291px;
+}
+.read-more-author {
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #c0c0c0;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+.rate-article {
+  align-self: flex-end;
+}
+.read-more-content p {
+  font-size: 24px;
+  font-family: 'PP Neue Montreal', sans-serif;
+  line-height: 1.6;
+}
+.social-media {
+  font-family: 'PP Neue Montreal', sans-serif;
+}
+.social-media-icon {
+  background-color: #383838;
+  padding: 0.8rem 1rem;
+  border-radius: 50%;
+}
+.post-stat {
+  font-family: 'Riccione-Serial', sans-serif;
+}
+.post-media-stat {
+  margin-top: 140px;
+  background: linear-gradient(
+      90deg,
+      rgba(255, 126, 33, 0.21) -84.62%,
+      rgba(255, 126, 33, 0) 85.95%
+    ),
+    #000;
+}
 
 .hero {
   font-family: 'PP Neue Montreal', sans-serif;
@@ -66,10 +130,26 @@ nav ul {
   line-height: 1.1;
   letter-spacing: -1.28px;
 }
+.blog-page-head,
 .brand-page-text {
   font-family: 'Riccione-Serial', sans-serif;
   letter-spacing: 0.15px;
 }
+
+.blog-page-text {
+  letter-spacing: -0.64px;
+  font-family: 'PP Neue Montreal', sans-serif;
+}
+.blog-page-read-more,
+.blog-card-head,
+.blog-form {
+  font-family: 'SF Pro Display', sans-serif;
+}
+.blog-card-text {
+  color: rgba(217, 217, 217, 0.8);
+  font-family: 'SF Pro Display', sans-serif;
+}
+
 .care-decision-head {
   font-family: 'Riccione-Serial', sans-serif;
   line-height: 1.1;

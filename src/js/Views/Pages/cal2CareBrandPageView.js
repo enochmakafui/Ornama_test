@@ -21,7 +21,8 @@ import sideBySideLoveAndLogoImage from 'url:/src/img/careBrandMedia/sideBySideLo
 class Cal2CarePageView extends View {
   _generateMarkup() {
     return `
-    <div class="bg-white text-[color:#343a40] px-5 md:px-[100px] lg:px-[auto] pt-8 md:pt-[211px] pb-[100px]">
+    <div class="bg-white text-[color:#343a40] px-5 md:px-[100px] lg:px-[auto] pt-8 md:pt-[211px] pb-[100px] ">
+        <div class="lg:max-w-[1440px] lg:mx-[auto]">
         <section class="">
             <div >
                 <video autoPlay loop muted class="rounded-[11px] md:rounded-[40px]">
@@ -152,7 +153,9 @@ class Cal2CarePageView extends View {
                <img src="${posterImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
            </div>
        </section>
+       </div>
     </div>
+
         `;
   }
 }
