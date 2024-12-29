@@ -19,6 +19,8 @@ import startProjectPage from './Views/Pages/StartProjectPageView';
 // homepage rendering ...
 
 const renderHomePage = function () {
+  window.scrollTo(0, 0); // Scroll to the top
+
   homePageView.render();
   homePageView.addHandlerSectionsObserver();
 };
@@ -88,6 +90,20 @@ const init = function () {
 init();
 
 // routing ...
+page('*', (ctx, next) => {
+  const rootElement = document.getElementById('root');
+  document.documentElement.style.scrollBehavior = 'auto';
+
+  // Ensure content is fully rendered before attempting to scroll
+  setTimeout(() => {
+    if (rootElement) {
+      rootElement.scrollTop = 0; // Scrollable root
+    }
+    window.scrollTo(0, 0); // Fallback for window
+  }, 0);
+
+  next(); // Allow other handlers (like your render functions) to run
+});
 
 page('/', renderHomePage);
 page('/branding', renderBrandPage);

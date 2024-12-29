@@ -10,33 +10,36 @@ import newsLetterSubscribeView from './newsLetterSubscribeView';
 import carrouselView from './carrouselView';
 
 class HomePageView extends View {
-  // using getters to get sections after they have been rendered ...
+  // selecting sections to observe ...
+  _heroSection;
+  _serviceSection;
+  _clientSection;
+  _articleSection;
+  _insightSection;
+  _storeSection;
 
-  get _heroSection() {
-    return document.querySelector('.hero');
-  }
-
-  get _serviceSection() {
-    return document.querySelector('.service');
-  }
-
-  get _clientSection() {
-    return document.querySelector('.client_section');
-  }
-  get _articleSection() {
-    return document.querySelector('.article_section');
-  }
-
-  get _insightSection() {
-    return document.querySelector('.insight_section');
-  }
-
-  get _storeSection() {
-    return document.querySelector('.store_section');
-  }
+  // selecting images to lazy load ...
+  _ImagesToLazyLoad;
 
   // observing all sections rendered ...
-
+  _lazyLoadingHandler() {
+    const imgObserver = new IntersectionObserver(
+      (entries, observer) => {
+        const [entry] = entries;
+        if (!entry.isIntersecting) return;
+        entry.target.src = entry.target.dataset.src;
+        entry.target.addEventListener('load', () => {
+          entry.target.classList.remove('lazy-img');
+        });
+        observer.unobserve(entry.target);
+      },
+      {
+        root: null,
+        threshold: 0.1,
+      }
+    );
+    this._ImagesToLazyLoad.forEach(img => imgObserver.observe(img));
+  }
   addHandlerSectionsObserver() {
     const sectionsToObserve = [
       this._heroSection,
@@ -92,6 +95,14 @@ class HomePageView extends View {
     this._rootElement.insertAdjacentHTML('afterbegin', markup);
     carrouselView.initSwiper();
     testimonialView.initSwiper();
+    this._heroSection = document.querySelector('.hero');
+    this._serviceSection = document.querySelector('.service');
+    this._clientSection = document.querySelector('.client_section');
+    this._articleSection = document.querySelector('.article_section');
+    this._insightSection = document.querySelector('.insight_section');
+    this._storeSection = document.querySelector('.store_section');
+    this._ImagesToLazyLoad = document.querySelectorAll('.lazy-img');
+    this._lazyLoadingHandler();
   }
 }
 

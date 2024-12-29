@@ -1,24 +1,64 @@
 import View from '../view';
 import weCareWithLoveVideo from 'url:/src/img/careBrandMedia/weCareWithLoveVideo.mp4';
 import oldManAndLadyLongImage from 'url:/src/img/careBrandMedia/oldManAndLadyLongImage.png';
+import oldManAndLadyLongImageLazy from 'url:/src/img/careBrandMedia/oldManAndLadyLongImage-lazy.jpg';
+
 import oldManAndLadyImage from 'url:/src/img/careBrandMedia/oldManAndLadyImage.png';
+import oldManAndLadyImageLazy from '/src/img/careBrandMedia/oldManAndLadyImage-lazy.jpg';
+
 import calCareOldLadyAndLadyImage from 'url:/src/img/careBrandMedia/calCareOldLadyAndLadyImage.png';
+import calCareOldLadyAndLadyImageLazy from '/src/img/careBrandMedia/calCareOldLadyAndLadyImage-lazy.jpg';
+
 import fourLogosImage from 'url:/src/img/careBrandMedia/fourLogosImage.png';
 import fourTypeFacesImage from 'url:/src/img/careBrandMedia/fourTypefacesImage.png';
 import typeFaceImage from 'url:/src/img/careBrandMedia/typeFaceImage.png';
 import calCareLogoImage from 'url:/src/img/careBrandMedia/careLogoImage.png';
+
 import businessCardImage from 'url:/src/img/careBrandMedia/businessCardImage.png';
+import businessCardImageLazy from '/src/img/careBrandMedia/businessCardImage-lazy.jpg';
+
 import oldLadyAndNurseImage from 'url:/src/img/careBrandMedia/oldLadyAndNurseImage.png';
+import oldLadyAndNurseImageLazy from '/src/img/careBrandMedia/oldLadyAndNurseImage-lazy.jpg';
+
 import lotsOfLogosImage from 'url:/src/img/careBrandMedia/lotOfLogosImage.png';
 import carVideo from 'url:/src/img/careBrandMedia/carVideo.mp4';
 import threePostersImage from 'url:/src/img/careBrandMedia/threePostersImage.png';
+import threePostersImageLazy from '/src/img/careBrandMedia/threePostersImage-lazy.jpg';
+
 import twoPostersSideBySide from 'url:/src/img/careBrandMedia/twoPostersSideBySideImage.jpg';
-import lotOfPostersImages from 'url:/src/img/careBrandMedia/lotOfPostersImage.png';
+import twoPostersSideBySideLazy from '/src/img/careBrandMedia/twoPostersSideBySideImage-lazy.jpg';
+
+import lotOfPostersImages from 'url:/src/img/careBrandMedia/lotOfPostersImage.jpg';
+import lotOfPostersImagesLazy from '/src/img/careBrandMedia/lotOfPostersImage-lazy.jpg';
+
 import twoPostersImage from 'url:/src/img/careBrandMedia/twoPostersImage.png';
+import twoPostersImageLazy from '/src/img/careBrandMedia/twoPostersImage-lazy.jpg';
+
 import posterImage from 'url:/src/img/careBrandMedia/posterImage.png';
+import posterImageLazy from '/src/img/careBrandMedia/posterImage-lazy.jpg';
 import sideBySideLoveAndLogoImage from 'url:/src/img/careBrandMedia/sideBySideLoveAndLogoImage.png';
 
 class Cal2CarePageView extends View {
+  _ImagesToLazyLoad;
+
+  _lazyLoadingHandler() {
+    const imgObserver = new IntersectionObserver(
+      (entries, observer) => {
+        const [entry] = entries;
+        if (!entry.isIntersecting) return;
+        entry.target.src = entry.target.dataset.src;
+        entry.target.addEventListener('load', () => {
+          entry.target.classList.remove('lazy-img');
+        });
+        observer.unobserve(entry.target);
+      },
+      {
+        root: null,
+        threshold: 0.1,
+      }
+    );
+    this._ImagesToLazyLoad.forEach(img => imgObserver.observe(img));
+  }
   _generateMarkup() {
     return `
     <div class="bg-white text-[color:#343a40] px-5 md:px-[100px] lg:px-[auto] pt-8 md:pt-[100px] pb-[100px] ">
@@ -41,12 +81,12 @@ class Cal2CarePageView extends View {
         </section>
         <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${oldManAndLadyLongImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
+                <img src="${oldManAndLadyLongImageLazy}" data-src="${oldManAndLadyLongImage}"  alt="" class="rounded-[11px] md:rounded-[40px] lazy-img"/>
             </div>
         </section>
         <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${oldManAndLadyImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
+                <img src="${oldManAndLadyImageLazy}" data-src="${oldManAndLadyImage}" data-src="" alt="" class="rounded-[11px] md:rounded-[40px] lazy-img"/>
             </div>
         </section>
         <section class="mt-8 md:mt-[100px] flex flex-col  md:flex-row gap-[128px] items-center px-2 md:px-16">
@@ -76,7 +116,7 @@ class Cal2CarePageView extends View {
 
         <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${calCareOldLadyAndLadyImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
+                <img src="${calCareOldLadyAndLadyImageLazy}" data-src="${calCareOldLadyAndLadyImage}" alt="" class="rounded-[11px] md:rounded-[40px] lazy-img"/>
             </div>
         </section>
         <section class="mt-8 md:mt-[100px]">
@@ -102,17 +142,17 @@ class Cal2CarePageView extends View {
         </section>
         <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${businessCardImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
+                <img src="${businessCardImageLazy}" data-src="${businessCardImage}" alt="" class="rounded-[11px] md:rounded-[40px] lazy-img"/>
             </div>
         </section>
         <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${oldLadyAndNurseImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
+                <img src="${oldLadyAndNurseImageLazy}" data-src="${oldLadyAndNurseImage}" alt="" class="rounded-[11px] md:rounded-[40px] lazy-img"/>
             </div>
         </section>
         <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${lotsOfLogosImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
+                <img src="${lotsOfLogosImage}" alt="" class="rounded-[11px] md:rounded-[40px] "/>
             </div>
         </section>
         <section class="mt-8 md:mt-[100px]">
@@ -130,33 +170,42 @@ class Cal2CarePageView extends View {
         </section>
          <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${threePostersImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
+                <img src="${threePostersImageLazy}" data-src="${threePostersImage}" alt="" class="rounded-[11px] md:rounded-[40px] lazy-img"/>
             </div>
         </section>
 
         <section class="mt-8 md:mt-[100px] overlapping-container">
             <div class="container-1">
-                <img src="${twoPostersSideBySide}" alt="" class="rounded-[11px] md:rounded-[40px] w-[713px] h-[535px]"/>
+                <img src="${twoPostersSideBySideLazy}" data-src="${twoPostersImage}" alt="" class="rounded-[11px] md:rounded-[40px] w-[713px] h-[535px] lazy-img"/>
             </div>
             <div class="container-2 ">
-                <img src="${lotOfPostersImages}" alt="" class="rounded-[11px] md:rounded-[40px] h-[404px] -rotate-12  ml-[20px] mt-[20px] w-[90%]"/>
+                <img src="${lotOfPostersImagesLazy}" data-src="${lotOfPostersImages}" alt="" class="rounded-[11px] md:rounded-[40px] h-[404px] -rotate-12  ml-[20px] mt-[20px] w-[90%] lazy-img"/>
             </div>
         </section>
         
         <section class="mt-8 md:mt-[100px]">
            <div >
-               <img src="${twoPostersImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
+               <img src="${twoPostersImageLazy}" data-src="${twoPostersImage}" alt="" class="rounded-[11px] md:rounded-[40px] lazy-img"/>
            </div>
        </section>
         <section class="mt-8 md:mt-[100px]">
            <div >
-               <img src="${posterImage}" alt="" class="rounded-[11px] md:rounded-[40px]"/>
+               <img src="${posterImageLazy}" data-src="${posterImage}" alt="" class="rounded-[11px] md:rounded-[40px] lazy-img"/>
            </div>
        </section>
        </div>
     </div>
 
         `;
+  }
+
+  render() {
+    const markup = this._generateMarkup();
+
+    this._clear();
+    this._rootElement.insertAdjacentHTML('afterbegin', markup);
+    this._ImagesToLazyLoad = document.querySelectorAll('.lazy-img');
+    this._lazyLoadingHandler();
   }
 }
 

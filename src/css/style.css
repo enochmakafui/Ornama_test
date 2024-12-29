@@ -39,6 +39,11 @@ header.sticky nav ul .nav__link {
 header.sticky .button-black {
   border: 2px solid black;
 }
+
+.lazy-img {
+  filter: blur(10px);
+}
+
 /* variables */
 
 /* button effect */

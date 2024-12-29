@@ -1,10 +1,13 @@
 import Swiper from 'swiper';
 import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
-import freshBayImage from '/src/img/FreshBay.jpg';
+import freshBayImage from '/src/img/FreshBay.png';
+import freshBayImageLazy from '/src/img/FreshBay-Lazy.jpg';
 import devronNexusImage from '/src/img/DevronNexus.png';
+import devronNexusImageLazy from '/src/img/DevronNexus-Lazy.jpg';
 import socialMediaVideo from 'url:/src/img/Social Media.mp4';
-import call2CareImage from '/src/img/call2care.jpg';
+import cal2CareOldLadyAndLadyImageLazy from '/src/img/careBrandMedia/calCareOldLadyAndLadyImage-Lazy.jpg';
+import calCareOldLadyAndLadyImage from '/src/img/careBrandMedia/calCareOldLadyAndLadyImage.png';
 
 class CarrouselView {
   initSwiper() {
@@ -63,15 +66,15 @@ class CarrouselView {
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
-                        <img src="${freshBayImage}" alt="slide 0" class="image">
+                        <img src="${freshBayImageLazy}" data-src="${freshBayImage}" alt="slide 0" class="image lazy-img">
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="${devronNexusImage}" alt="slide 1" class="image">
+                        <img src="${devronNexusImageLazy}" data-src="${devronNexusImage}" alt="slide 1" class="image lazy-img">
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="${call2CareImage}" alt="slide 2" class="image">
+                        <img src="${calCareOldLadyAndLadyImage}" data-src="${cal2CareOldLadyAndLadyImageLazy}" alt="slide 2" class="image lazy-img">
                     </div>
 
                     <div class="swiper-slide">
@@ -81,15 +84,20 @@ class CarrouselView {
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="${freshBayImage}" alt="slide 0" class="image">
+                        <img src="${freshBayImageLazy}" data-src="${freshBayImage}" alt="slide 0" class="image lazy-img">
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="${devronNexusImage}" alt="slide 1" class="image">
+                        <img src="${devronNexusImageLazy}" data-src="${devronNexusImage}" alt="slide 1" class="image lazy-img">
                     </div>
                     
                     <div class="swiper-slide">
-                        <img src="${call2CareImage}" alt="slide 2" class="image">
+                        <img src="${cal2CareOldLadyAndLadyImageLazy}" data-src="${calCareOldLadyAndLadyImage}" alt="slide 2" class="image lazy-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <video autoPlay loop muted class=" video">
+                            <source src="${socialMediaVideo}" type="video/mp4" />
+                        </video>
                     </div>
             
                 </div>
