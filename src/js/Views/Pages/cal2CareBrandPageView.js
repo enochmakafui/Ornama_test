@@ -176,7 +176,7 @@ class Cal2CarePageView extends View {
 
         <section class="mt-8 md:mt-[100px] overlapping-container">
             <div class="container-1">
-                <img src="${twoPostersSideBySideLazy}" data-src="${twoPostersImage}" alt="" class="rounded-[11px] md:rounded-[40px] w-[713px] h-[535px] lazy-img"/>
+                <img src="${twoPostersSideBySideLazy}" data-src="${twoPostersSideBySide}" alt="" class="rounded-[11px] md:rounded-[40px] w-[713px] h-[535px] lazy-img"/>
             </div>
             <div class="container-2 ">
                 <img src="${lotOfPostersImagesLazy}" data-src="${lotOfPostersImages}" alt="" class="rounded-[11px] md:rounded-[40px] h-[404px] -rotate-12  ml-[20px] mt-[20px] w-[90%] lazy-img"/>
