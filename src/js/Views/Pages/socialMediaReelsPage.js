@@ -8,7 +8,7 @@ import interiorSocialImage from '/src/img/InteriorSocial.png';
 class SocialMediaReelsPage extends View {
   _generateMarkup() {
     return `
-                <div class="pt-8 md:pt-[211px]  social-media lg:max-w-[1440px] lg:mx-[auto]">
+                <div class="pt-8 md:pt-[100px]  social-media lg:max-w-[1440px] lg:mx-[auto]">
                     <div class="px-5 md:px-[100px]">
                         <img src=${headlineOverlayImage} alt="headline overlay" class="w-full" />
                     </div>

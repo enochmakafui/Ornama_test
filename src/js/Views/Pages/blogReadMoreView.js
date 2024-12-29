@@ -4,7 +4,7 @@ import carrouselView from './carrouselView';
 class BlogReadMoreView extends View {
   _generateMarkup() {
     return `
-            <div class="pt-8 md:pt-[211px] bg-[#F9F9F9]  px-5 md:px-[100px]">
+            <div class="pt-8 md:pt-[110px] bg-[#F9F9F9]  px-5 md:px-[100px]">
             <div class="  lg:max-w-[1440px] lg:mx-[auto]">
                 <div class="read-more-preview">
                     <h2 class="text-white">The power of branding for small-scale startups</h2>

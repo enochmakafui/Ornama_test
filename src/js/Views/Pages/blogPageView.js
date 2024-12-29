@@ -8,7 +8,7 @@ import blogCardImage3 from '/src/img/blogCardImage3.png';
 class BlogPageView extends View {
   _generateMarkup() {
     return `
-        <div class="pt-8 md:pt-[211px] lg:max-w-[1440px] lg:mx-[auto]">
+        <div class="pt-8 md:pt-[110px] lg:max-w-[1440px] lg:mx-[auto]">
                 <div class="text-white px-5 md:px-20 lg:px-[auto]">
                     <h1 class="hero-heading italic mb-4 blog-page-head"> Insights from the frontlines</h1>
                     <p class="text-[32px] blog-page-text">Stay up-to-date with the latest industry trends, expert advice, and captivating stories here</p>
@@ -25,7 +25,7 @@ class BlogPageView extends View {
                         <div class="block md:hidden">
                             <h2 class="text-2xl md:text-6xl font-bold mb-[16px]">The power of branding for small-scale startups</h2>
                             <h3 class="mb-[48px]">Article by Richmond Aryeh | 2024 </h3>
-                            <a href="#" data-route="/blog/1" class="text-white bg-black rounded-[64px]  px-[110px] md:px-8 py-[12px] md:py-2 text-base md:text-2xl text-nowrap">Read more</a>
+                            <a href="#" data-route="/blog/1" class="button-white bg-black rounded-[64px]  px-[110px] md:px-8 py-[12px] md:py-2 text-base md:text-2xl text-nowrap"><span>Read more</span><span>Read more</span></a>
                         </div>
                     </div>
                 </div>

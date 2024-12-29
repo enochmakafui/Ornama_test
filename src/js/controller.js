@@ -14,6 +14,7 @@ import blogReadMoreView from './Views/Pages/blogReadMoreView';
 import socialMediaMarketingView from './Views/Pages/socialMediaPostPageView';
 import workScopeSectionView from './Views/Pages/workScopeSectionView';
 import socialMediaReelsPage from './Views/Pages/socialMediaReelsPage';
+import startProjectPage from './Views/Pages/StartProjectPageView';
 
 // homepage rendering ...
 
@@ -68,12 +69,17 @@ const renderSocialMediaReelsPage = function () {
   socialMediaReelsPage.render();
 };
 
+const renderStartProjectPage = function () {
+  startProjectPage.render();
+};
+
 // first actions
 const init = function () {
   const footerYear = document.getElementById('year');
   const year = new Date().getFullYear();
   footerYear.innerHTML = year;
   navView.addHandlerWorkHover();
+  navView.addHandlerNavBarObserver();
   navView.addHandlerNavLinkClick(controlNavRoutes);
   mobileScreenNavView.addHandlerHamburgerMenuClick();
   mobileScreenNavView.addHandlerWorkBtnClick();
@@ -92,5 +98,6 @@ page('/branding/devronNexus', renderDevronNexusPage);
 page('/blog/1', renderBlogReadMorePage);
 page('/social-media-post', renderSocialMediaPage);
 page('/social-media-reels', renderSocialMediaReelsPage);
+page('/startProject', renderStartProjectPage);
 
 page();

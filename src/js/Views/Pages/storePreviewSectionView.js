@@ -15,11 +15,11 @@ class StorePreviewSectionView {
         </div>
         <div class="absolute flex flex-col  items-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <h2 class="text-white text-[64px] text-center">Find the best of picture frames, books and digital assets</h2>
-            <a  href="/store" data-route="/store" class="inline-block text-2xl bg-white px-12 py-4 rounded-[100px] text-black mt-12 hover:bg-[#e8e8e8]"> Visit Our Store</a>
+            <a  href="/store" data-route="/store" class="button-black text-2xl  px-12 py-4 rounded-[100px]  mt-12 border-white border"> <span>Visit Our Store</span><span class="text-nowrap">Visit Our Store</span></a>
         </div>
         
     </section>
-    <section class="insight_section bg-black section section--hidden text-white pt-[77px] md:pt-[210px] pb-[98px]">
+    <section class="insight_section bg-black section section--hidden text-white pt-[77px] md:pt-[77px] pb-[98px]">
   <div class="mx-5 md:mx-[80px] lg:mx-[auto] md:px-10 lg:max-w-[1440px]">
     <h2 class="text-white section-heading text-center">Some Insights From Us</h2>
     <div class="mt-4 md:mt-[74px] grid grid-cols-2 gap-0">

@@ -15,7 +15,7 @@ class NewsLetterSubscribeView {
                 placeholder="Enter your email"
             >
 
-           <a href="#" class="flex items-center text-2xl bg-white px-12 py-4 rounded-[100px] text-black hover:bg-[#e8e8e8]">
+           <a href="#" class="flex items-center text-2xl bg-white px-12 py-4 rounded-[100px] text-black ">
                 Subscribe
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 

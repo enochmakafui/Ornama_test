@@ -14,25 +14,27 @@ class NavView {
 
   _showDropItem;
 
-  // addHandlerObserverNav() {
-  //   const header = this._header;
+  // fix this code header flashes when scrolling
 
-  //   window.addEventListener('scroll', () => {
-  //     if (window.scrollY >= 50) {
-  //       if (!header.classList.contains('sticky')) {
-  //         header.classList.add('sticky');
-  //         this._hamburgerIcon.classList.remove('stroke-white');
-  //         this._hamburgerIcon.classList.add('stroke-black');
-  //         this._navLogo.src = logoImageBlack;
-  //       }
-  //     } else {
-  //       header.classList.remove('sticky');
-  //       this._hamburgerIcon.classList.remove('stroke-black');
-  //       this._hamburgerIcon.classList.add('stroke-white');
-  //       this._navLogo.src = logoImageWhite;
-  //     }
-  //   });
-  // }
+  addHandlerNavBarObserver() {
+    const header = this._header;
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= 50) {
+        if (!header.classList.contains('sticky')) {
+          header.classList.add('sticky');
+          this._hamburgerIcon.classList.remove('stroke-white');
+          this._hamburgerIcon.classList.add('stroke-black');
+          this._navLogo.src = logoImageBlack;
+        }
+      } else {
+        header.classList.remove('sticky');
+        this._hamburgerIcon.classList.remove('stroke-black');
+        this._hamburgerIcon.classList.add('stroke-white');
+        this._navLogo.src = logoImageWhite;
+      }
+    });
+  }
 
   addHandlerNavLinkClick(handler) {
     this._navEL.addEventListener('click', e => {

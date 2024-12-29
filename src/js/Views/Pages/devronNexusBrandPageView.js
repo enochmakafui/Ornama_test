@@ -18,7 +18,7 @@ import parcelImage from 'url:/src/img/DevronBrandMedia/parcelImage.png';
 class DevronNexusPageView extends View {
   _generateMarkup() {
     return `
-    <div class="bg-white text-[color:#343a40] px-2 md:px-20 pt-8 md:pt-[211px] pb-16 ">
+    <div class="bg-white text-[color:#343a40] px-2 md:px-20 pt-8 md:pt-[100px] pb-16 ">
     <div  class="lg:max-w-[1440px] lg:mx-[auto]">
         <section class="">
             <div >

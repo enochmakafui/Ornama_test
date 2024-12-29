@@ -61,26 +61,33 @@ class CarrouselView {
         <div class="carrousel-container">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
+
                     <div class="swiper-slide">
                         <img src="${freshBayImage}" alt="slide 0" class="image">
                     </div>
+
                     <div class="swiper-slide">
                         <img src="${devronNexusImage}" alt="slide 1" class="image">
                     </div>
+
                     <div class="swiper-slide">
                         <img src="${call2CareImage}" alt="slide 2" class="image">
                     </div>
+
                     <div class="swiper-slide">
                         <video autoPlay loop muted class=" video">
                             <source src="${socialMediaVideo}" type="video/mp4" />
                         </video>
                     </div>
+
                     <div class="swiper-slide">
                         <img src="${freshBayImage}" alt="slide 0" class="image">
                     </div>
+
                     <div class="swiper-slide">
                         <img src="${devronNexusImage}" alt="slide 1" class="image">
                     </div>
+                    
                     <div class="swiper-slide">
                         <img src="${call2CareImage}" alt="slide 2" class="image">
                     </div>
