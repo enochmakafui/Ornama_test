@@ -86,7 +86,7 @@ class Cal2CarePageView extends View {
         </section>
         <section class="mt-8 md:mt-[100px]">
             <div >
-                <img src="${oldManAndLadyImageLazy}" data-src="${oldManAndLadyImage}" data-src="" alt="" class="rounded-[11px] md:rounded-[40px] lazy-img"/>
+                <img src="${oldManAndLadyImageLazy}" data-src="${oldManAndLadyImage}"  alt="" class="rounded-[11px] md:rounded-[40px] lazy-img"/>
             </div>
         </section>
         <section class="mt-8 md:mt-[100px] flex flex-col  md:flex-row gap-[128px] items-center px-2 md:px-16">
