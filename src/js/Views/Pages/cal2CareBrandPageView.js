@@ -1,13 +1,13 @@
 import View from '../view';
 import weCareWithLoveVideo from 'url:/src/img/careBrandMedia/weCareWithLoveVideo.mp4';
 import oldManAndLadyLongImage from 'url:/src/img/careBrandMedia/oldManAndLadyLongImage.png';
-import oldManAndLadyLongImageLazy from 'url:/src/img/careBrandMedia/oldManAndLadyLongImage-lazy.jpg';
+import oldManAndLadyLongImageLazy from '/src/img/careBrandMedia/oldManAndLadyLongImage-lazy.jpg';
 
 import oldManAndLadyImage from 'url:/src/img/careBrandMedia/oldManAndLadyImage.png';
-import oldManAndLadyImageLazy from '/src/img/careBrandMedia/oldManAndLadyImage-lazy.jpg';
+import oldManAndLadyImageLazy from '/src/img/careBrandMedia/oldManAndLadyImage-Lazy.jpg';
 
 import calCareOldLadyAndLadyImage from 'url:/src/img/careBrandMedia/calCareOldLadyAndLadyImage.png';
-import calCareOldLadyAndLadyImageLazy from '/src/img/careBrandMedia/calCareOldLadyAndLadyImage-lazy.jpg';
+import calCareOldLadyAndLadyImageLazy from '/src/img/careBrandMedia/calCareOldLadyAndLadyImage.png';
 
 import fourLogosImage from 'url:/src/img/careBrandMedia/fourLogosImage.png';
 import fourTypeFacesImage from 'url:/src/img/careBrandMedia/fourTypefacesImage.png';
@@ -15,27 +15,27 @@ import typeFaceImage from 'url:/src/img/careBrandMedia/typeFaceImage.png';
 import calCareLogoImage from 'url:/src/img/careBrandMedia/careLogoImage.png';
 
 import businessCardImage from 'url:/src/img/careBrandMedia/businessCardImage.png';
-import businessCardImageLazy from '/src/img/careBrandMedia/businessCardImage-lazy.jpg';
+import businessCardImageLazy from '/src/img/careBrandMedia/businessCardImage-Lazy.jpg';
 
 import oldLadyAndNurseImage from 'url:/src/img/careBrandMedia/oldLadyAndNurseImage.png';
-import oldLadyAndNurseImageLazy from '/src/img/careBrandMedia/oldLadyAndNurseImage-lazy.jpg';
+import oldLadyAndNurseImageLazy from '/src/img/careBrandMedia/oldLadyAndNurseImage-Lazy.jpg';
 
 import lotsOfLogosImage from 'url:/src/img/careBrandMedia/lotOfLogosImage.png';
 import carVideo from 'url:/src/img/careBrandMedia/carVideo.mp4';
 import threePostersImage from 'url:/src/img/careBrandMedia/threePostersImage.png';
-import threePostersImageLazy from '/src/img/careBrandMedia/threePostersImage-lazy.jpg';
+import threePostersImageLazy from '/src/img/careBrandMedia/threePostersImage-Lazy.jpg';
 
 import twoPostersSideBySide from 'url:/src/img/careBrandMedia/twoPostersSideBySideImage.jpg';
-import twoPostersSideBySideLazy from '/src/img/careBrandMedia/twoPostersSideBySideImage-lazy.jpg';
+import twoPostersSideBySideLazy from '/src/img/careBrandMedia/twoPostersImage-Lazy.jpg';
 
 import lotOfPostersImages from 'url:/src/img/careBrandMedia/lotOfPostersImage.jpg';
-import lotOfPostersImagesLazy from '/src/img/careBrandMedia/lotOfPostersImage-lazy.jpg';
+import lotOfPostersImagesLazy from '/src/img/careBrandMedia/lotOfPostersImage-Lazy.jpg';
 
 import twoPostersImage from 'url:/src/img/careBrandMedia/twoPostersImage.png';
-import twoPostersImageLazy from '/src/img/careBrandMedia/twoPostersImage-lazy.jpg';
+import twoPostersImageLazy from '/src/img/careBrandMedia/twoPostersImage-Lazy.jpg';
 
 import posterImage from 'url:/src/img/careBrandMedia/posterImage.png';
-import posterImageLazy from '/src/img/careBrandMedia/posterImage-lazy.jpg';
+import posterImageLazy from '/src/img/careBrandMedia/posterImage-Lazy.jpg';
 import sideBySideLoveAndLogoImage from 'url:/src/img/careBrandMedia/sideBySideLoveAndLogoImage.png';
 
 class Cal2CarePageView extends View {
