@@ -72,11 +72,11 @@ class Cal2CarePageView extends View {
         </section>
         <section class="mt-8 md:mt-[100px] flex flex-col md:flex-row items-center px-2 md:px-16">
             <div class="basis-2/4">
-                <h2 class="text-[50px] font-normal  mb-8 care-solution-text">Call2Care solutions </br> UK <span class="italic">Rebrand</span></h2>
+                <h2 class="text-[32px] text-center md:text-left md:text-[50px] font-normal mb-5 md:mb-8 care-solution-text">Call2Care solutions </br> UK <span class="normal md:italic">Rebrand</span></h2>
                 <p class="text-[18px]">A Domiciliary care service provider</p>
             </div>
             <div class="basis-2/4">
-                <p class="text-[20px] care-solution-long-text">Some brands are deeply embedded with the essence of compassion and humanity, possessing the power to provide comfort, support, and hope to those in need. When Call2Care Solution approached us for their rebranding project, we recognized that we were about to collaborate with a brand that epitomizes the genuine spirit of care and love.</p>
+                <p class="text-[20px] care-solution-long-text mt-10 md:mt-0">Some brands are deeply embedded with the essence of compassion and humanity, possessing the power to provide comfort, support, and hope to those in need. When Call2Care Solution approached us for their rebranding project, we recognized that we were about to collaborate with a brand that epitomizes the genuine spirit of care and love.</p>
             </div>
         </section>
         <section class="mt-8 md:mt-[100px]">
@@ -91,7 +91,7 @@ class Cal2CarePageView extends View {
         </section>
         <section class="mt-8 md:mt-[100px] flex flex-col  md:flex-row gap-[128px] items-center px-2 md:px-16">
             <div class="basis-[45%]">
-                <h2 class="text-5xl mb-8 care-decision-head">The Decision to </br> Rebrand</h2>
+                <h2 class="text-[32px] md:text-5xl mb-8 care-decision-head">The Decision to <br class="hidden md:block"> Rebrand</h2>
                 <ul class="flex flex-col gap-5">
                     <li class="mb-2">
                     <p class="text-[20px]"><span class="font-bold">Uniqueness:</span> The client's previous logo was similar to others in the industry, lacking a unique identity that set them apart.
@@ -163,7 +163,7 @@ class Cal2CarePageView extends View {
             </div>
         </section>
         <section class="mt-8 md:mt-[100px]">
-                <div class=" px-[266px]">
+                <div class="px-5 md:px-[100px] lg:px-[266px]">
                     <p class="mb-5 text-[20px] care-quote text-center">“ I was impressed by the outcome so I awarded a 3-month contract to <span class="font-bold">Ornama Studio</span> to aid in the post branding process. The team did my company’s brochures and social media posts and they were awesome.” </p>
                     <p class="quote-author text-center">Pius- Call2Care Solutions CEO</p>
                 </div>
@@ -174,12 +174,12 @@ class Cal2CarePageView extends View {
             </div>
         </section>
 
-        <section class="mt-8 md:mt-[100px] overlapping-container">
+        <section class="mt-8 md:mt-[100px] overlapping-container ">
             <div class="container-1">
-                <img src="${twoPostersSideBySideLazy}" data-src="${twoPostersSideBySide}" alt="" class="rounded-[11px] md:rounded-[40px] w-[713px] h-[535px] lazy-img"/>
+                <img src="${twoPostersSideBySideLazy}" data-src="${twoPostersSideBySide}" alt="" class="rounded-[11px] md:rounded-[40px] w-full md:w-[713px] h-auto md:h-[535px] lazy-img"/>
             </div>
             <div class="container-2 ">
-                <img src="${lotOfPostersImagesLazy}" data-src="${lotOfPostersImages}" alt="" class="rounded-[11px] md:rounded-[40px] h-[404px] -rotate-12  ml-[20px] mt-[20px] w-[90%] lazy-img"/>
+                <img src="${lotOfPostersImagesLazy}" data-src="${lotOfPostersImages}" alt="" class="rounded-[11px] md:rounded-[40px] h-auto md:h-[404px] md:-rotate-12  md:ml-[20px] mt-8 md:mt-[20px] w-full md:w-[90%] lazy-img"/>
             </div>
         </section>
         

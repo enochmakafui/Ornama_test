@@ -50,7 +50,7 @@ header.sticky .button-black {
 .button-white {
   position: relative;
   overflow: hidden;
-  display: inline-block;
+  /* display: inline-block; */
   text-decoration: none;
   cursor: pointer;
   user-select: none;
@@ -61,7 +61,7 @@ header.sticky .button-black {
   position: relative;
   overflow: hidden;
   color: #18181a;
-  display: inline-block;
+  /* display: inline-block; */
   text-decoration: none;
   cursor: pointer;
   background: #fff;
@@ -258,6 +258,11 @@ nav ul {
 .hero-btn-container {
   font-family: 'SF Pro Display', sans-serif;
 }
+
+.see-work-link {
+  font-family: 'SF Pro Display', sans-serif;
+  letter-spacing: -0.32px;
+}
 .hero-bg {
   background-image: url('/src/img/heroBackgroundImage.jpg');
   background-position: center;
@@ -266,14 +271,14 @@ nav ul {
 }
 
 .hero-heading {
-  font-size: clamp(2.5rem, 0.6383rem + 5.9574vw, 6rem);
-  line-height: 1;
+  /* font-size: clamp(2.5rem, 0.6383rem + 5.9574vw, 6rem); */
+  /* line-height: 1; */
   letter-spacing: -1.92px;
 }
 .brand-heading {
-  font-size: clamp(1.5rem, 0.1702rem + 4.2553vw, 4rem);
+  /* font-size: clamp(1.5rem, 0.1702rem + 4.2553vw, 4rem); */
   line-height: 1.1;
-  letter-spacing: -1.28px;
+  /* letter-spacing: -1.28px; */
 }
 .blog-page-head,
 .brand-page-text {
@@ -333,12 +338,28 @@ nav ul {
   grid-column: 5/11;
   grid-row: 1/-1;
 }
+@media (max-width: 768px) {
+  .overlapping-container {
+    display: block;
+  }
+  .container-1 {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+  .container-2 {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+}
+
 .section-heading {
   /* font-size: clamp(1.5rem, 0.7021rem + 2.5532vw, 3rem); */
-  font-size: 48px;
+  /* font-size: 48px; */
   letter-spacing: -0.96px;
   font-family: 'SF Pro Display', sans-serif;
 }
+
+/**/
 
 .client {
   color: #343a40;
@@ -348,7 +369,7 @@ nav ul {
   letter-spacing: -1.08px;
 }
 .client-image-card {
-  padding: 24px 48px;
+  /* padding: 24px 48px; */
   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
   border-radius: 12px;
 }
@@ -514,21 +535,21 @@ nav ul {
   transform: translateX(50%) !important;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .swiper-button-prev {
-    left: 2% !important;
+    left: 5% !important;
     width: 28px !important;
     height: 28px !important;
   }
   .swiper-button-next {
-    right: 2% !important;
+    right: 5% !important;
     width: 28px !important;
     height: 28px !important;
   }
 }
 
 /* Mobile styles for carousel */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .carrousel-container {
     margin: 1rem 0;
     height: 300px;
@@ -545,7 +566,7 @@ nav ul {
 }
 
 /* Additional small screen adjustments */
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .carrousel-container {
     height: 250px;
   }
@@ -613,7 +634,7 @@ nav ul {
   right: 21%;
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .testimonial-button-prev {
     display: none;
   }
