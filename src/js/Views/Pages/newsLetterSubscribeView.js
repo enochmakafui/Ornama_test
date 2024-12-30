@@ -9,13 +9,13 @@ class NewsLetterSubscribeView {
         </div>
         <div class="w-full flex flex-row items-center gap-4">
             <input 
-                class="flex-1 rounded-[64px] px-4 py-4" 
+                class="flex-1 rounded-xl md:rounded-[64px] px-4 py-2 md:py-4" 
                 type="email" 
                 spellcheck="false" 
                 placeholder="Enter your email"
             >
 
-           <a href="#" class="flex items-center text-2xl bg-white px-12 py-4 rounded-[100px] text-black ">
+           <a href="#" class="flex items-center text-[16px] md:text-2xl bg-white px-6 md:px-12 py-3 md:py-4 rounded-[100px] text-black ">
                 Subscribe
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
