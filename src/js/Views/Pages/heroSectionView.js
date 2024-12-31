@@ -7,14 +7,14 @@ class HeroSectionView {
             <span class="font-light md:font-normal"> We are a creative agency <br class="hidden md:block"> building brands that <br class="hidden md:block"> make a </span> difference
         </h2>
 
-        <div class="hero-btn-container flex gap-5 md:gap-[32px]  mt-4 md:mt-[74px]">
+        <div class="hero-btn-container flex gap-5 md:gap-[32px]  mt-6 md:mt-[74px]">
         
-            <a href="/startProject" data-route="/startProject" class="hidden md:inline-block text-2xl px-12 py-4 rounded-[100px] button-black border-white border">
-                <span class="text">Let's Talk </span> <span>Let's Talk</span>
+            <a href="/startProject" data-route="/startProject" class="inline-block text-[18px] md:text-2xl px-8 md:px-12 py-3 md:py-4 rounded-[100px] button-black border-white border">
+                <span class="text-nowrap">Let's Talk </span> <span class="text-nowrap">Let's Talk</span>
             </a>
 
-            <a href="#" class="hidden md:inline-block text-2xl px-12 py-4 bg-black rounded-[100px] border button-white">
-                <span class="text">See our work</span> <span class="text-nowrap">See our work</span> 
+            <a href="#" class="inline-block text-[18px] md:text-2xl px-8 md:px-12 py-3 md:py-4 bg-black rounded-[100px] border button-white">
+                <span class="text-nowrap">See our work</span> <span class="text-nowrap">See our work</span> 
             </a>
         </div>
 

@@ -1,23 +1,13 @@
-import frame1Image from '/src/img/Frame-1.png';
-import frame2Image from '/src/img/Frame-2.png';
-import frame3Image from '/src/img/Frame-4.png';
 import thinkOutsideBoxImage from '/src/img/ThinkOutSideBox.jpeg';
 
 class StorePreviewSectionView {
   render() {
     return `
-    <section class="grid grid-cols-2 gap-0 relative section section--hidden store_section h-[186px] md:h-auto">
-        <img src=${frame1Image} alt="frame image" class="w-full h-full" />
-        <div class="grid grid-cols-2 ">
-            <img src=${frame2Image} alt="frame image" class="col-span-2 w-full h-full"/>
-            <img src=${frame3Image} alt="frame image" class="w-full h-full" />
-            <img src=${frame3Image} alt="frame image" class="w-full h-full" />
-        </div>
-        <div class=" absolute flex flex-col  items-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <h2 class="text-white text-[24px] md:text-[64px] md:text-center">Find the best of picture frames, books and digital assets</h2>
-            <a  href="/store" data-route="/store" class="text-nowrap button-black text-[16px] md:text-2xl  px-8 md:px-12 py-3 md:py-4 rounded-[100px]  mt-5 md:mt-12 border-white border"> <span>Visit Our Store</span><span class="text-nowrap">Visit Our Store</span></a>
-        </div>
-        
+    <section class="h-[400px] md:h-[562px] section section--hidden store_section ">
+        <div class="store_section__content  w-[90%] md:w-auto">
+            <h2 class="text-white text-[24px] md:text-[64px] text-center ">Find the best of picture frames, books and digital assets</h2>
+            <a  href="/store" data-route="/store" class="w-max text-nowrap button-black text-[16px] md:text-2xl  px-8 md:px-12 py-3 md:py-4 rounded-[100px]  mt-5 md:mt-12 border-white border"> <span>Visit Our Store</span><span class="text-nowrap">Visit Our Store</span></a>
+        </div>  
     </section>
     <section class="insight_section bg-black section section--hidden text-white pt-[77px] md:pt-[77px] pb-[98px]">
   <div class="mx-0 md:mx-[80px] lg:mx-[auto] px-2 md:px-10 lg:max-w-[1440px]">

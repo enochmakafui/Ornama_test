@@ -1,6 +1,3 @@
-import uiDesignImage from '/src/img/Ui_design_image.jpg';
-import marketingImage from '/src/img/social_media_image.jpg';
-import carImage from '/src/img/carImage.png';
 class WorkScopeSectionView {
   render() {
     return ` <section class="service section section--hidden text-white md:px-10 mt-8 md:mt[96px] mx-5 md:mx-[80px] lg:mx-[auto] lg:max-w-[1440px]">
@@ -10,10 +7,9 @@ class WorkScopeSectionView {
         <h2 class="text-center section-heading text-2xl md:text-5xl tracking-[0.8px] ">
             Our Scope Of Work
         </h2>
-        <div class="scope-of-work-card-container mt-8 md:mt-[96px] flex flex-col md:flex-row justify-center gap-[40px] px-auto "> 
-            <div class="relative  brand-container">
-              <img src="${carImage}" alt="branding card "  class="w-[400px] h-[320px] rounded-3xl"/>
-              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 rounded-b-3xl">
+        <div class="scope-of-work-card-container mt-8 md:mt-[96px] flex flex-col md:flex-row justify-center   gap-[40px] px-auto "> 
+            <div class="brand-container w-auto md:w-[400px] h-[286px] md:h-[320px]">
+              <div class="brand-container__content">
                 <h3 class="mb-[17px] md:mb-[18px] ml-[21px] md:ml-[24px] text-[39px] md:text-[44px]">Branding</h3>
                 <div class=" flex-col gap-[8px] ml-[21px]  text-white brand-content-container">
                   <h4 class="text-[21px]">Visual Identity</h4>
@@ -22,9 +18,8 @@ class WorkScopeSectionView {
                 </div>
               </div>
             </div>
-            <div class="relative design-container">
-              <img src="${uiDesignImage}" alt="Web and App Development card" class="w-[400px] h-[320px] rounded-3xl" />
-              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 rounded-b-3xl">
+            <div class=" design-container w-auto md:w-[400px] h-[286px] md:h-[320px] ">
+              <div class="design-container__content">
               <h3 class="mb-[17px] md:mb-[18px] ml-[21px] md:ml-[24px] text-[39px] md:text-[44px]">UI Design</h3>
               <div class=" flex-col gap-[8px] ml-[21px]   text-white design-content-container">
                   <h4 class="text-[21px]">UI and UX Design</h4>
@@ -33,9 +28,8 @@ class WorkScopeSectionView {
                 </div>
               </div>
             </div>
-            <div class="relative marketing-container">
-              <img src="${marketingImage}" alt="Marketing card" class="w-[400px] h-[320px] rounded-3xl" />
-              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 rounded-b-3xl">
+            <div class="marketing-container w-auto md:w-[400px] h-[286px] md:h-[320px] ">
+              <div class="marketing-container__content">
               <h3 class="mb-[17px] md:mb-[18px] ml-[21px] md:ml-[24px] text-[39px] md:text-[44px]">Marketing</h3>
               <div class=" flex-col gap-[8px] ml-[21px]   text-white marketing-content-container">
                   <h4 class="text-[21px]">Social Media Design</h4>
