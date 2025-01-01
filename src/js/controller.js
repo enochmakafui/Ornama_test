@@ -15,6 +15,7 @@ import socialMediaMarketingView from './Views/Pages/socialMediaPostPageView';
 import workScopeSectionView from './Views/Pages/workScopeSectionView';
 import socialMediaReelsPage from './Views/Pages/socialMediaReelsPage';
 import startProjectPage from './Views/Pages/StartProjectPageView';
+import socialMediaRehomePosts from './Views/Pages/socialMediaRehomePosts';
 
 // homepage rendering ...
 
@@ -75,6 +76,10 @@ const renderStartProjectPage = function () {
   startProjectPage.render();
 };
 
+const renderRehomePostsPage = function () {
+  socialMediaRehomePosts.render();
+};
+
 // first actions
 const init = function () {
   const footerYear = document.getElementById('year');
@@ -115,5 +120,6 @@ page('/blog/1', renderBlogReadMorePage);
 page('/social-media-post', renderSocialMediaPage);
 page('/social-media-reels', renderSocialMediaReelsPage);
 page('/startProject', renderStartProjectPage);
+page('/rehomePosts', renderRehomePostsPage);
 
 page();

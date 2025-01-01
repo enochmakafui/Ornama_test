@@ -1,9 +1,5 @@
 import View from '../view';
 import headlineOverlayImage from '/src/img/headlineOverlay.png';
-import rehomeMediaImage from '/src/img/RehomeSocial.png';
-import recruitSocialImage from '/src/img/RecruitSocial.png';
-import freshBaySocialImage from '/src/img/FreshBaySocial.png';
-import interiorSocialImage from '/src/img/InteriorSocial.png';
 
 class SocialMediaPostPage extends View {
   _generateMarkup() {
@@ -65,32 +61,38 @@ class SocialMediaPostPage extends View {
                             </svg>
                         Post</a>
                         <a href="/social-media-reels" data-route="/social-media-reels" class="text-white pt-5 text-[20px] flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <g clip-path="url(#clip0_4372_1548)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_4372_1548)">
                             <path d="M21 3H3C1.89 3 1 3.89 1 5V17C1 18.1 1.89 19 3 19H8V21H16V19H21C22.1 19 22.99 18.1 22.99 17L23 5C23 3.89 22.1 3 21 3ZM21 17H3V5H21V17ZM16 11L9 15V7L16 11Z" fill="#D9D9D9"/>
-                        </g>
-                        <defs>
+                            </g>
+                            <defs>
                             <clipPath id="clip0_4372_1548">
                             <rect width="24" height="24" fill="white"/>
                             </clipPath>
-                        </defs>
-                        </svg>
+                            </defs>
+                            </svg>
                         Reels</a>
                     </div>
                     <div class="px-5 md:px-[100px]">
-                    <p class="text-[28px] text-white mt-[80px]">We Drove awareness and sign-ups targeting professionals.</p>
+                        <p class="text-[28px] text-white mt-[80px]">We Drove awareness and sign-ups targeting professionals.</p>
                     <div class="flex items-center gap-4 pb-5  mt-[51px]">
                         <figure>
-                            <img src=${rehomeMediaImage} alt="rehome media" class="w-full mb-10" />
+                            <div class="rehome-card h-[413px] w-[413px] rounded-[24px] mb-10">
+                                <a href="/rehomePosts" data-route="/rehomePosts" class="uppercase text-white text-[20px] bg-[#585858] px-8 py-2 rounded-[100px] border border-[#FF7E21] card__button">View more</a> 
+                            </div>
                             <figcaption class="text-white text-[28px] text-center">Rehome Africa</figcaption>
                         </figure>
                         
                         <figure>
-                            <img src=${recruitSocialImage} alt="recruit social" class="w-full mb-10" />
+                            <div class="weThrive-card h-[413px] w-[413px] rounded-[24px] mb-10">
+                                <a href="#" class="uppercase text-white text-[20px] bg-[#585858] px-8 py-2 rounded-[100px] border border-[#FF7E21] card__button">View more</a> 
+                            </div>
                             <figcaption class="text-white text-[28px] text-center">Personnel Practice Ltd</figcaption>
                         </figure>
                         <figure>
-                            <img src=${freshBaySocialImage} alt="fresh bay social" class="w-full mb-10" />
+                            <div class="freshBay-card h-[413px] w-[413px] rounded-[24px] mb-10">
+                                <a href="#" class="uppercase text-white text-[20px] bg-[#585858] px-8 py-2 rounded-[100px] border border-[#FF7E21] card__button">View more</a> 
+                            </div>
                             <figcaption class="text-white text-[28px] text-center">Fresh Bay Social</figcaption>
                         </figure>
                     </div>
@@ -102,17 +104,23 @@ class SocialMediaPostPage extends View {
                     <div class="px-5 md:px-[100px]">
                     <p class="text-[28px] text-white mt-[40px]">Boosted social media engagement which increase memberships by running a 30-day challenge campaign.</p>
 
-                        <div class="flex items-center gap-4 pb-5  mt-[51px] px-5">
+                        <div class="flex items-center gap-4 pb-5  mt-[51px]">
                             <figure>
-                                <img src=${freshBaySocialImage} alt="fresh bay social" class="w-full mb-10" />
+                                <div class="freshBay-card h-[413px] w-[413px] rounded-[24px] mb-10">
+                                    <a href="#" class="uppercase text-white text-[20px] bg-[#585858] px-8 py-2 rounded-[100px] border border-[#FF7E21] card__button">View more</a> 
+                                </div>
                                 <figcaption class="text-white text-[28px] text-center">Fresh Bay Social</figcaption>
                             </figure>
                             <figure>
-                                <img src=${recruitSocialImage} alt="recruit social" class="w-full mb-10 " />
+                                <div class="weThrive-card h-[413px] w-[413px] rounded-[24px] mb-10">
+                                    <a href="#" class="uppercase text-white text-[20px] bg-[#585858] px-8 py-2 rounded-[100px] border border-[#FF7E21] card__button">View more</a> 
+                                </div>
                                 <figcaption class="text-white text-[28px] text-center">Personnel Practice Ltd</figcaption>
                             </figure>
                             <figure>
-                                <img src=${rehomeMediaImage} alt="rehome media" class="w-full mb-10" />
+                                <div class="rehome-card h-[413px] w-[413px] rounded-[24px] mb-10">
+                                    <a href="#" class="uppercase text-white text-[20px] bg-[#585858] px-8 py-2 rounded-[100px] border border-[#FF7E21] card__button">View more</a> 
+                                </div>
                                 <figcaption class="text-white text-[28px] text-center">Rehome Africa</figcaption>
                             </figure>
                         </div>
@@ -123,17 +131,23 @@ class SocialMediaPostPage extends View {
                     <div class="px-5 md:px-[100px]">
                     <p class="text-[28px] text-white mt-[40px]">Redesign and optimize the Shopify store to improve user experience, increase mobile purchases, and reduce cart abandonment.</p>
 
-                        <div class="flex items-center gap-4 pb-5   mt-[51px] px-5" >
+                        <div class="flex items-center gap-4 pb-5   mt-[51px] " >
                             <figure>
-                                <img src=${recruitSocialImage} alt="recruit social" class="w-full mb-10" />
+                                <div class="weThrive-card h-[413px] w-[413px] rounded-[24px] mb-10">
+                                    <a href="#" class="uppercase text-white text-[20px] bg-[#585858] px-8 py-2 rounded-[100px] border border-[#FF7E21] card__button">View more</a> 
+                                </div>
                                 <figcaption class="text-white text-[28px] text-center">Personnel Practice Ltd</figcaption>
                             </figure>
                             <figure>
-                                <img src=${rehomeMediaImage} alt="rehome media" class="w-full mb-10" />
+                                <div class="rehome-card h-[413px] w-[413px] rounded-[24px] mb-10">
+                                    <a href="#" class="uppercase text-white text-[20px] bg-[#585858] px-8 py-2 rounded-[100px] border border-[#FF7E21] card__button">View more</a> 
+                                </div>
                                 <figcaption class="text-white text-[28px] text-center">Rehome Africa</figcaption>
                             </figure>
                             <figure>
-                                <img src=${freshBaySocialImage} alt="fresh bay social" class="w-full mb-10" />
+                                <div class="freshBay-card h-[413px] w-[413px] rounded-[24px] mb-10">
+                                    <a href="#" class="uppercase text-white text-[20px] bg-[#585858] px-8 py-2 rounded-[100px] border border-[#FF7E21] card__button">View more</a> 
+                                </div>
                                 <figcaption class="text-white text-[28px] text-center">Fresh Bay Social</figcaption>
                             </figure>
 
@@ -156,7 +170,7 @@ class SocialMediaPostPage extends View {
 
                             </span>
                             <p class="text-[#FF7E21] text-[28px] post-stat">50,000+</p>
-                            <p class="text-white text-center">new followers on all social Media platforms</p>
+                            <p class="text-white text-center text-[18px]">new followers on all social Media platforms</p>
                         </li>
                         <li class="flex flex-col items-center">
                             <span>
@@ -168,7 +182,7 @@ class SocialMediaPostPage extends View {
                             </svg>
                             </span>
                             <p class="text-[#FF7E21] text-[28px] post-stat">35%</p>
-                            <p class="text-white text-center">Sales increased within three months.</p>
+                            <p class="text-white text-center text-[18px]">Sales increased within three months.</p>
                         </li>
                         <li class="flex flex-col items-center">
                             <span>
@@ -181,7 +195,7 @@ class SocialMediaPostPage extends View {
 
                             </span>
                             <p class="text-[#FF7E21] text-[28px] post-stat">2.5 million</p>
-                            <p class="text-white text-center">Ad videos views with a 10% click-through rate.</p>
+                            <p class="text-white text-center text-[18px]">Ad videos views with a 10% click-through rate.</p>
                         </li>
                     </ul>
                 </div>

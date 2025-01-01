@@ -1,9 +1,5 @@
 import View from '../view';
 import headlineOverlayImage from '/src/img/headlineOverlay.png';
-import rehomeMediaImage from '/src/img/RehomeSocial.png';
-import recruitSocialImage from '/src/img/RecruitSocial.png';
-import freshBaySocialImage from '/src/img/FreshBaySocial.png';
-import interiorSocialImage from '/src/img/InteriorSocial.png';
 
 class SocialMediaReelsPage extends View {
   _generateMarkup() {
@@ -79,18 +75,24 @@ class SocialMediaReelsPage extends View {
                         </div>
                         <div class="px-5 md:px-[100px]">
                         <p class="text-[28px] text-white mt-[80px]">We Drove awareness and sign-ups targeting professionals.</p>
-                        <div class="flex items-center gap-4 pb-5  mt-[51px]">
+                        <div class="flex items-center gap-5 pb-5  mt-[51px]">
                             <figure>
-                                <img src=${rehomeMediaImage} alt="rehome media" class="w-full mb-10" />
+                                <div class="rehome-card h-[413px] w-[413px] rounded-[24px] mb-10">
+                                    <a href="#" class="uppercase text-white text-[20px] bg-[#585858] px-8 py-2 rounded-[100px] border border-[#FF7E21] card__button">View more</a> 
+                                </div>
                                 <figcaption class="text-white text-[28px] text-center">Rehome Africa</figcaption>
                             </figure>
                             
                             <figure>
-                                <img src=${recruitSocialImage} alt="recruit social" class="w-full mb-10" />
+                                <div class="weThrive-card h-[413px] w-[413px] rounded-[24px] mb-10">
+                                    <a href="#" class="uppercase text-white text-[20px] bg-[#585858] px-8 py-2 rounded-[100px] border border-[#FF7E21] card__button">View more</a> 
+                                </div>
                                 <figcaption class="text-white text-[28px] text-center">Personnel Practice Ltd</figcaption>
                             </figure>
                             <figure>
-                                <img src=${freshBaySocialImage} alt="fresh bay social" class="w-full mb-10" />
+                                <div class="freshBay-card h-[413px] w-[413px] rounded-[24px] mb-10">
+                                    <a href="#" class="uppercase text-white text-[20px] bg-[#585858] px-8 py-2 rounded-[100px] border border-[#FF7E21] card__button">View more</a> 
+                                </div>
                                 <figcaption class="text-white text-[28px] text-center">Fresh Bay Social</figcaption>
                             </figure>
                         </div>
@@ -102,17 +104,23 @@ class SocialMediaReelsPage extends View {
                         <div class="px-5 md:px-[100px]">
                         <p class="text-[28px] text-white mt-[40px]">Boosted social media engagement which increase memberships by running a 30-day challenge campaign.</p>
     
-                            <div class="flex items-center gap-4 pb-5  mt-[51px] px-5">
-                                <figure>
-                                    <img src=${freshBaySocialImage} alt="fresh bay social" class="w-full mb-10" />
+                            <div class="flex items-center gap-5 pb-5 mt-[51px] ">
+                                <figure >
+                                    <div class="freshBay-card h-[413px] w-[413px] rounded-[24px] mb-10">
+                                        <a href="#" class="uppercase text-white text-[20px] bg-[#585858] px-8 py-2 rounded-[100px] border border-[#FF7E21] card__button">View more</a> 
+                                    </div>
                                     <figcaption class="text-white text-[28px] text-center">Fresh Bay Social</figcaption>
                                 </figure>
                                 <figure>
-                                    <img src=${recruitSocialImage} alt="recruit social" class="w-full mb-10 " />
+                                    <div class="weThrive-card h-[413px] w-[413px] rounded-[24px] mb-10">
+                                        <a href="#" class="uppercase text-white text-[20px] bg-[#585858] px-8 py-2 rounded-[100px] border border-[#FF7E21] card__button">View more</a> 
+                                    </div>
                                     <figcaption class="text-white text-[28px] text-center">Personnel Practice Ltd</figcaption>
                                 </figure>
                                 <figure>
-                                    <img src=${rehomeMediaImage} alt="rehome media" class="w-full mb-10" />
+                                    <div class="rehome-card h-[413px] w-[413px] rounded-[24px] mb-10">
+                                        <a href="#" class="uppercase text-white text-[20px] bg-[#585858] px-8 py-2 rounded-[100px] border border-[#FF7E21] card__button">View more</a> 
+                                    </div>
                                     <figcaption class="text-white text-[28px] text-center">Rehome Africa</figcaption>
                                 </figure>
                             </div>
@@ -123,17 +131,23 @@ class SocialMediaReelsPage extends View {
                         <div class="px-5 md:px-[100px]">
                         <p class="text-[28px] text-white mt-[40px]">Redesign and optimize the Shopify store to improve user experience, increase mobile purchases, and reduce cart abandonment.</p>
     
-                            <div class="flex items-center gap-4 pb-5   mt-[51px] px-5" >
+                            <div class="flex items-center gap-5 pb-5   mt-[51px] " >
                                 <figure>
-                                    <img src=${recruitSocialImage} alt="recruit social" class="w-full mb-10" />
+                                    <div class="weThrive-card h-[413px] w-[413px] rounded-[24px] mb-10">
+                                        <a href="#" class="uppercase text-white text-[20px] bg-[#585858] px-8 py-2 rounded-[100px] border border-[#FF7E21] card__button">View more</a> 
+                                    </div>
                                     <figcaption class="text-white text-[28px] text-center">Personnel Practice Ltd</figcaption>
                                 </figure>
                                 <figure>
-                                    <img src=${rehomeMediaImage} alt="rehome media" class="w-full mb-10" />
+                                    <div class="rehome-card h-[413px] w-[413px] rounded-[24px] mb-10">
+                                        <a href="#" class="uppercase text-white text-[20px] bg-[#585858] px-8 py-2 rounded-[100px] border border-[#FF7E21] card__button">View more</a> 
+                                    </div>
                                     <figcaption class="text-white text-[28px] text-center">Rehome Africa</figcaption>
                                 </figure>
                                 <figure>
-                                    <img src=${freshBaySocialImage} alt="fresh bay social" class="w-full mb-10" />
+                                    <div class="freshBay-card h-[413px] w-[413px] rounded-[24px] mb-10">
+                                        <a href="#" class="uppercase text-white text-[20px] bg-[#585858] px-8 py-2 rounded-[100px] border border-[#FF7E21] card__button">View more</a> 
+                                    </div>
                                     <figcaption class="text-white text-[28px] text-center">Fresh Bay Social</figcaption>
                                 </figure>
     

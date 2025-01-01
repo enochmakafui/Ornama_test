@@ -1,6 +1,3 @@
-import logoImageBlack from '/src/img/logo_black.png';
-import logoImageWhite from '/src/img/logo-white.png';
-
 class NavView {
   _header = document.querySelector('header');
   _navEL = document.querySelector('nav');
@@ -25,13 +22,15 @@ class NavView {
           header.classList.add('sticky');
           this._hamburgerIcon.classList.remove('stroke-white');
           this._hamburgerIcon.classList.add('stroke-black');
-          this._navLogo.src = logoImageBlack;
+          this._navLogo.classList.remove('dark');
+          this._navLogo.classList.add('light');
         }
       } else {
         header.classList.remove('sticky');
         this._hamburgerIcon.classList.remove('stroke-black');
         this._hamburgerIcon.classList.add('stroke-white');
-        this._navLogo.src = logoImageWhite;
+        this._navLogo.classList.remove('light');
+        this._navLogo.classList.add('dark');
       }
     });
   }

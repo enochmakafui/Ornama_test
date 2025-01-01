@@ -18,8 +18,65 @@ header.sticky nav ul .nav__link {
 header.sticky .button-black {
   border: 2px solid black;
 }
+/* social media page styles */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.rehome-card {
+  background-image: url('/src/img/Social_media_images/rehome.jpg');
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+}
+.card__button {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+.rehome-card:hover .card__button {
+  display: inline-block;
+}
+
+.weThrive-card {
+  background-image: url('/src/img/Social_media_images/weThrive.jpg');
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+}
+
+.weThrive-card:hover .card__button {
+  display: inline-block;
+}
+
+.freshBay-card {
+  background-image: url('/src/img/Social_media_images/freshBay.png');
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+}
+
+.freshBay-card:hover .card__button {
+  display: inline-block;
+}
 
 /* navigation styles */
+
+.nav_logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.nav_logo.light {
+  background-image: url('/src/img/logo_black.png');
+}
+
+.nav_logo.dark {
+  background-image: url('/src/img/logo-white.png');
+}
 
 nav {
   background-color: #000;
