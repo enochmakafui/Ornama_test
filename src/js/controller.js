@@ -85,11 +85,10 @@ const init = function () {
   const footerYear = document.getElementById('year');
   const year = new Date().getFullYear();
   footerYear.innerHTML = year;
-  navView.addHandlerWorkHover();
   navView.addHandlerNavBarObserver();
   navView.addHandlerNavLinkClick(controlNavRoutes);
   mobileScreenNavView.addHandlerHamburgerMenuClick();
-  mobileScreenNavView.addHandlerWorkBtnClick();
+  // mobileScreenNavView.addHandlerWorkBtnClick();
 };
 
 init();

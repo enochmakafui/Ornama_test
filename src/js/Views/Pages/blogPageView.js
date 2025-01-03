@@ -10,7 +10,7 @@ class BlogPageView extends View {
     return `
         <div class="pt-8 md:pt-[110px] lg:max-w-[1440px] lg:mx-[auto]">
                 <div class="text-white px-5 md:px-20 lg:px-[auto]">
-                    <h1 class="hero-heading italic mb-4 blog-page-head"> Insights from the frontlines</h1>
+                    <h1 class="hero-heading italic mb-4 blog-page-head text-[40px] md:text-[96px]"> Insights from the frontlines</h1>
                     <p class="text-[32px] blog-page-text">Stay up-to-date with the latest industry trends, expert advice, and captivating stories here</p>
                 </div>
                 <div class="px-5 md:px-20 lg:px-[auto] mt-8 md:mt-[96px]">

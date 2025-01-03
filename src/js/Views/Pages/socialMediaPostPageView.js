@@ -5,8 +5,16 @@ class SocialMediaPostPage extends View {
   _generateMarkup() {
     return `
             <div class="pt-8 md:pt-[100px]  social-media lg:max-w-[1440px] lg:mx-[auto]">
-                <div class="px-5 md:px-[100px]">
-                    <img src=${headlineOverlayImage} alt="headline overlay" class="w-full" />
+                <div class="mx-[80px] social-media-banner">
+                    <div class="banner banner_1">
+                        <h2 class="social-media-banner-text">we boost your Media engagement</h2>
+                    </div>
+                    <div class="banner banner_2">
+                        <h2 class="social-media-banner-text">Generate Adds that boost clicks</h2>
+                    </div>
+                    <div class="banner banner_3">
+                        <h2 class="social-media-banner-text">Get you E-commerce Created with Ease</h2>
+                    </div>
                 </div>
                 <div class="px-5 md:px-[100px] flex justify-center mt-[80px] mb-[60px] gap-[40px]">
                     <a href="#" class="bg-[#585858] text-white p-5 rounded-[36px] flex items-center gap-2 text-[20px]">

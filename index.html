@@ -39,7 +39,7 @@
   <body class="bg-[#121212]">
     <header class="header w-full md:px-[38px] bg-[#000]">
       <nav
-        class="flex justify-between items-center mx-5 md:mx-[80px] lg:mx-[auto] md:px-10 py-4 nav lg:max-w-[1440px]"
+        class="mx-5 md:mx-[80px] lg:mx-[auto] md:px-10 pt-3 pb-1 nav lg:max-w-[1440px]"
       >
         <a href="/" data-route="/" class="nav__link-home">
           <div
@@ -55,68 +55,64 @@
               >Our Story
             </a>
           </li>
-          <li class="ml-[64px] text-xl drop__link">
+          <li class="ml-[64px] text-xl drop_link">
             <a
               href="#"
               data-route="/works"
-              class="inline-block text-white hover:text-[#FF7E21] nav__link"
+              class="text-white nav__link flex items-center gap-2 hover:text-[#FF7E21]"
             >
-              <button class="flex items-center space-x-1 relative drop__btn">
-                <span>Our Works</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-chevron-down lucide-dropdown mt-1"
-                >
-                  <path d="m6 9 6 6 6-6" />
-                </svg>
-              </button>
-
-              <ul
-                class="absolute px-5 py-3 mt-3 flex flex-col gap-4 rounded-[16px] border border-white bg-[rgba(18,18,18,0.2)] backdrop-blur-[12.5px] z-10 text-white hidden_item drop__item"
+              <span>Our Works</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chevron-down lucide-dropdown mt-1 rotate-dropdown"
               >
-                <li
-                  class="hover:bg-[#FF7E21] hover:scale-110 transition-all duration-300 ease-in-out rounded-[10px] p-2 text-left whitespace-nowrap"
-                >
-                  <a
-                    href="/branding"
-                    data-route="/branding"
-                    class="inline-block nav__item-link"
-                  >
-                    Branding
-                  </a>
-                </li>
-                <li
-                  class="p-2 rounded-[10px] text-left whitespace-nowrap hover:bg-[#FF7E21] hover:scale-110 transition-all duration-300 ease-in-out"
-                >
-                  <a
-                    href="#"
-                    data-route="/webApps"
-                    class="inline-block nav__item-link"
-                  >
-                    UI Design
-                  </a>
-                </li>
-                <li
-                  class="p-2 rounded-[10px] text-left whitespace-nowrap hover:bg-[#FF7E21] hover:scale-110 transition-all duration-300 ease-in-out"
-                >
-                  <a
-                    href="/social-media-post"
-                    data-route="/social-media-post"
-                    class="inline-block nav__item-link"
-                  >
-                    Social Media Marketing
-                  </a>
-                </li>
-              </ul>
+                <path d="m6 9 6 6 6-6" />
+              </svg>
             </a>
+
+            <ul class="dropdown__content">
+              <li
+                class="hover:bg-[#FF7E21] hover:scale-110 transition-all duration-300 ease-in-out rounded-[10px] p-2 text-left whitespace-nowrap"
+              >
+                <a
+                  href="/branding"
+                  data-route="/branding"
+                  class="inline-block nav__item-link"
+                >
+                  Branding
+                </a>
+              </li>
+              <li
+                class="p-2 rounded-[10px] text-left whitespace-nowrap hover:bg-[#FF7E21] hover:scale-110 transition-all duration-300 ease-in-out"
+              >
+                <a
+                  href="#"
+                  data-route="/webApps"
+                  class="inline-block nav__item-link"
+                >
+                  UI Design
+                </a>
+              </li>
+              <li
+                class="p-2 rounded-[10px] text-left whitespace-nowrap hover:bg-[#FF7E21] hover:scale-110 transition-all duration-300 ease-in-out"
+              >
+                <a
+                  href="/social-media-post"
+                  data-route="/social-media-post"
+                  class="inline-block nav__item-link"
+                >
+                  Social Media Marketing
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="ml-[64px] text-xl">
             <a
@@ -218,7 +214,7 @@
 
           <ul class="flex flex-col gap-9">
             <li>
-              <a href="#" class="text-xl">Our Story</a>
+              <a href="/story" data-route="/story" class="text-xl">Our Story</a>
             </li>
             <li>
               <a href="#" class="text-xl">

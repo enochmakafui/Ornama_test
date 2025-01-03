@@ -5,14 +5,14 @@ class MobileScreenNavView {
   _ourWorkBtn = document.getElementById('ourWorkBtn');
   _dropdownMenu = document.getElementById('dropdownMenu');
 
-  addHandlerWorkBtnClick(handler) {
-    this._ourWorkBtn.addEventListener('click', e => {
-      console.log(e.target);
-      console.log(this._dropdownMenu);
+  // addHandlerWorkBtnClick(handler) {
+  //   this._ourWorkBtn.addEventListener('click', e => {
+  //     console.log(e.target);
+  //     console.log(this._dropdownMenu);
 
-      // handler();
-    });
-  }
+  //     // handler();
+  //   });
+  // }
   addHandlerHamburgerMenuClick(handler) {
     this._hamburgerMenu.addEventListener('click', e => {
       this._fullScreenNav.classList.toggle('hidden');

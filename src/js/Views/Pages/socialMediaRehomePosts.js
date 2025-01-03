@@ -1,5 +1,7 @@
 import View from '../view';
-// import images
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/swiper-bundle.css';
 import paulPlaceImage from '/src/img/Social_media_images/paulsPlaceImage.jpg';
 import rehomeTweetImage from '/src/img/Social_media_images/rehomeTweet.jpg';
 import leakingRoofImage from '/src/img/Social_media_images/leakingRoof.jpg';
@@ -13,11 +15,59 @@ import easyShippingImage from '/src/img/Social_media_images/easy-shipping.jpg';
 import dreamHomeImage from '/src/img/Social_media_images/dream_home.jpg';
 
 class SocialMediaRehomePost extends View {
+  initSwiper() {
+    this.swiper = new Swiper('.swiper-container', {
+      modules: [Navigation, Pagination],
+      loop: true,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination', // Targets the pagination element
+        clickable: true, // Makes the pagination dots clickable
+      },
+      slidesPerView: 3.5, // Default to one slide per view
+      navigation: {
+        nextEl: '.swiper-button-next',
+      },
+    });
+  }
+
   _generateMarkup() {
     return `
-        <div class="pt-8 md:pt-[100px]  social-media lg:max-w-[1440px] lg:mx-[auto]">
-            <div class=" border-[#868e96] border-t">
-                    <div class="flex justify-center gap-[60px] items-center ">
+        <div class="pt-8 md:pt-[100px] mx-[80px] px-10 social-media lg:max-w-[1440px] lg:mx-[auto]">
+            <div class="" >
+                <div class="posts_head">
+                    <div>
+                        <h2>REHOME AFRICA</h2>
+                        <p>A Realty firm and Estate Concierge service provider</p>
+                    </div>
+                    <p>Stories</p>
+                </div>
+                <div class="swiper-container post">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide">
+                            <img src="${paulPlaceImage}"  alt="slide 0" class="h-[440px] w-[340px] rounded-[24px]">
+                        </div>   
+                        <div class="swiper-slide">
+                            <img src="${independenceImage}"  alt="slide 1" class="h-[440px] w-[340px] rounded-[24px]">
+                        </div>   
+                        <div class="swiper-slide">
+                            <img src="${dreamHomeImage}"  alt="slide 2" class="h-[440px] w-[340px] rounded-[24px]">
+                        </div>   
+                        <div class="swiper-slide">
+                            <img src="${shippingImage}"  alt="slide 3" class="h-[440px] w-[340px] rounded-[24px]">
+                        </div>   
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                   <div class="swiper-button-next"></div>
+                </div>
+
+            </div>
+
+
+            <div class=" border-[#868e96] border-t mt-[40px]">
+                    <div class="flex justify-center gap-[60px] items-center mb-[60px] ">
                         <a href="/social-media-post" data-route="/social-media-post" class="text-white pt-4 text-[20px] border-t-4 border-[#FF7E21] flex items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <g clip-path="url(#clip0_4372_1543)">
@@ -118,6 +168,13 @@ class SocialMediaRehomePost extends View {
 
         </div>
     `;
+  }
+
+  render() {
+    const markup = this._generateMarkup();
+    this._clear();
+    this._rootElement.insertAdjacentHTML('afterbegin', markup);
+    this.initSwiper();
   }
 }
 

@@ -2,16 +2,11 @@ class NavView {
   _header = document.querySelector('header');
   _navEL = document.querySelector('nav');
   _navLogo = document.querySelector('.nav_logo');
-  _workLink = document.querySelector('.drop__link');
   _hamburgerIcon = document.querySelector('.hamburger svg');
 
   get _fullScreenNav() {
     return document.getElementById('fullscreenNav');
   }
-
-  _showDropItem;
-
-  // fix this code header flashes when scrolling
 
   addHandlerNavBarObserver() {
     const header = this._header;
@@ -48,36 +43,6 @@ class NavView {
       handler(route);
       if (link.classList.contains('mobile-nav__item-link')) {
         this._fullScreenNav.classList.toggle('hidden');
-      }
-    });
-  }
-
-  addHandlerWorkHover() {
-    const dropDownIcon = document.querySelector('.lucide-chevron-down');
-    const dropItem = document.querySelector('.drop__item');
-    const showDropDown = function () {
-      dropDownIcon.classList.add('rotate-dropdown');
-      dropItem.classList.remove('hidden_item');
-      dropItem.classList.add('show_item');
-    };
-
-    const hideDropDown = function () {
-      dropDownIcon.classList.remove('rotate-dropdown');
-      dropItem.classList.add('hidden_item');
-      dropItem.classList.remove('show_item');
-    };
-
-    this._workLink.addEventListener('mouseover', function () {
-      this._showDropItem = true;
-
-      if (this._showDropItem) {
-        showDropDown();
-      }
-    });
-    this._workLink.addEventListener('mouseout', function (e) {
-      this._showDropItem = false;
-      if (!this._showDropItem) {
-        hideDropDown();
       }
     });
   }
